@@ -1,0 +1,628 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Urbanist:wght@734&display=swap');
+
+/* General Body Styling */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #00070e, #060000, #00100e);
+  background-size: 400% 400%;
+  background-attachment: fixed; 
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  animation: moveGradient 8s ease infinite;
+}
+
+/* Keyframes for moving the background gradient */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* @media (max-width: 968px) {
+  body {
+    width: 850px;
+    left: 385px;
+    transform: none;
+    text-align: center; /* Center the content within the header */
+  
+ 
+/* Footer Styling */
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      width: 78%; 
+      /* left: 0px; */
+      border-radius: 20px;
+  }
+}
+.profile-picture {
+  position: absolute;
+  /* display: flex; */
+  top: 200px;
+  transform: none;
+  left: 650px;
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%; /* Creates the circular shape */
+  border: 1px solid rgba(102, 39, 22, 0.56);
+  box-shadow: 0px 4px 6px  #2484fa;
+  overflow: -moz-hidden-unscrollable;
+}
+/* For even smaller screens (mobile) */ 
+   @media (max-width: 460px) {
+    .profile-picture {
+    width: 100px;
+    left: 160px;
+    height: auto;
+  }
+}
+.welcome {
+  font-family: "Exo 2", sans-serif;
+  font-size: 3vw;
+  color: white;
+  top: 100px;
+  white-space: nowrap;
+  position: absolute;
+  animation: moveText 5s infinite;
+  opacity: 0;
+  text-align: center;
+  text-shadow: 3px #001c2d;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px; /* Add this to push the About section down */
+}
+@media (max-width: 468px) {
+  .welcome {
+    font-size: 7vw;
+    width: 340px;
+   
+  }
+}
+.spacer-1 {
+  height: 200px; /* Adjust this height as needed */
+}
+
+.spacer-2 {
+  height: 80px; /* Adjust this height as needed */
+}
+
+.spacer-5 {
+  height: 20px; /* Adjust this height as needed */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%) translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0) translateX(-50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+/* Navbar styling */
+header {
+  background-color: #000000;
+  border-radius: 30px;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  /* left: 50px; */
+  width: 65%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 15px;
+}
+
+.navbar .logo a {
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Navbar links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+#singh{
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  color: white;
+}
+#singh:hover{
+  animation: bounce 0.7s ease;
+  color: #2484fa;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+   50% {
+    transform: translateY(-10px); /* Adjust bounce height */
+  }
+}
+.nav-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-family: "Exo 2", sans-serif;
+  color: white;
+}
+
+/* Hover effect */
+.nav-button:hover {
+  animation: bounce 0.7s ease;
+  color: #2484fa;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+   50% {
+    transform: translateY(-10px); /* Adjust bounce height */
+  }
+}
+
+
+.nav-button:active {
+  transform: translateY(1px);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    width: 390px;
+    /* max-width: 100%; */
+    /* padding: 10px; */
+    border-radius: 20px;
+  }
+}
+
+
+/* Adjust for very small screens */
+@media (max-width: 480px) {
+    .nav-button {
+        padding: 2px 3px;
+        font-size: 0.6rem;
+    }
+}
+
+/* General Section Styling */
+#about-sec {
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.418);
+  border: 1px solid rgba(48, 16, 7, 0.56);
+  max-width: 90%; /* Allows flexibility for smaller screens */
+  width: 790px; /* Retains a fixed width for larger screens */
+  box-shadow: 0 3px 3px #2484fa;
+  font-family: "Urbanist", sans-serif;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  border-radius: 40px;
+}
+
+#about-sec h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+}
+#nitin {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7615, #e551ff); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+.about-content {
+  color: #545454;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about-sec {
+    position: relative;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      width: 78%; 
+      /* left: 0px; */
+      border-radius: 20px;
+  }
+
+  #about-sec h3 {
+      font-size: 1.5rem; /* Adjust font size for better readability */
+  }
+
+  .about-content {
+      font-size: 0.9rem; /* Slightly smaller font size for compact view */
+  }
+}
+
+@media (min-width: 1024px) {
+  #about-sec {
+      margin-top: 120px; /* Additional space for larger screens */
+  }
+
+  #about-sec h3 {
+      font-size: 2.5rem; /* Larger heading for better emphasis */
+  }
+
+  .about-content {
+      font-size: 1rem; /* Keep font size consistent for desktop */
+  }
+}
+
+
+
+#projects {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border: 1px solid rgba(48, 16, 7, 0.56);
+    font-family: "Urbanist", sans-serif;
+    box-shadow: 0 3px 3px #2484fa;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 40px;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Exo 2", sans-serif;
+}
+
+/* Container Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row if necessary */
+    gap: 20px; /* Adds space between project boxes */
+    justify-content: center;
+}
+
+/* Individual Project Box Styling */
+.project-box {
+    background-color: rgba(0, 0, 0, 0.118);
+   border: 1px solid rgba(48, 16, 7, 0.56);
+
+    font-family: "Urbanist", sans-serif;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0px 2px 2px  #2ed5ff;
+    padding: 20px;
+    max-width: 300px; /* Limits the width of each project box */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.4s; /* Adds a hover effect */
+}
+
+/* Hover Effect */
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.project-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Exo 2", sans-serif;
+    color: #ffffff; /* Highlighted color for project titles */
+}
+
+/* Paragraph Styling */
+.project-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+  #projects {
+    position: relative;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      width: 79%;
+      max-width: 100%;
+      border-radius: 20px;
+  }
+}
+/* Skill Section */
+
+#skills {
+  padding: 1px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.218);
+  border: 1px solid rgba(48, 16, 7, 0.56);
+  box-shadow: 0 3px 3px #2484fa;
+}
+
+#skills h2 {
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* Glossy Skills Box */
+.skills-box {
+  width: 300px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.545));
+  border-radius: 20px;
+  padding: 100px ;
+  border: 1px solid rgb(30, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-box:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 90%;
+  height: 50%;
+  background: radial-gradient(circle at 25% 25%, rgba(160, 160, 160, 0.24), rgba(0, 0, 0, 0.286));
+  z-index: 0;
+  transform: rotate(45deg);
+  animation: glossy-glow 8s linear infinite;
+}
+
+@keyframes glossy-glow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjusted for smaller circles */
+  gap: 1.5rem;
+  justify-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Circular Progress Bar - Smaller Circles */
+.circle {
+  position: relative;
+  width: 70px;  /* Smaller size */
+  height: 70px; /* Smaller size */
+  background: #ffffff7e;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(59, 59, 59, 0.5), inset 0 -10px 15px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #d43535;
+  overflow: hidden;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #2484fa calc(var(--percentage) * 1%),
+    #ffffff 0);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #171010;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.circle span {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;  /* Adjust text size for smaller circles */
+}
+
+/* Animation */
+.circle:hover {
+  box-shadow: 0 0 15px #2B2B2B, 0 0 30px #605a00;
+}
+@media (max-width: 768px) {
+  #skilled {
+    position: relative;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      width: 89%; 
+      left: 0px;
+      max-width: 100%;
+      border-radius: 20px;
+  }
+}
+
+/* Contact Section Styling */
+
+  .contact-container {
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    background-color: rgba(0, 0, 0, 0.418);
+    border: 1px solid rgba(48, 16, 7, 0.56);
+    padding: 30px 20px;
+    border-radius: 25px;
+    box-shadow: 0 3px 4px #2484fa;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container p {
+    font-size: 1rem;
+    color: #2484fa;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .info-item .icon {
+    font-size: 1.2rem;
+    color: #5a5af7;
+  }
+  
+  .info-item a, 
+  .info-item p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #13aa05;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: rgb(13, 61, 0);
+  }
+  @media (max-width: 768px) {
+    #contact-section {
+      position: relative;
+        margin: 20px auto; /* Reduce top margin for smaller screens */
+        padding: 15px;
+        width: 79%; 
+        right: 22px;
+        /* left: 5px; */
+        max-width: 100%;
+        border-radius: 20px;
+    }
+  }
+  .top{
+    display: inline-block;
+    position: relative;
+  text-align: center;
+  bottom: 9px;
+  font-family: "Exo 2", sans-serif;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  padding: 1px 1px;
+  right: 700px;
+  width: 47px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  border: 1px solid rgba(48, 16, 7, 0.56);
+  box-shadow: 0 3px 4px #2484fa;
+  }
+  .top:hover {
+    animation: bounce 0.7s ease;
+    color: #2484fa;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+     50% {
+      transform: translateY(-10px); /* Adjust bounce height */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top {
+      position: relative;
+        margin: 10px; /* Reduce top margin for smaller screens */
+        padding: 5px;
+        right: 165px;
+        /* left: 5px; */
+        /* max-width: 100%; */
+        border-radius: 20px;
+    }
+  }

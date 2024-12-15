@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Singh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#home" id="singh">Nitin Singh</a>
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home" class="nav-button">Home</a></li>
+                    <li><a href="#about-sec" class="nav-button">About</a></li>
+                    <li><a href="#projects" class="nav-button">Projects</a></li>
+                    <li><a href="#skills" class="nav-button">Skills</a></li>
+                    <li><a href="#contact-section" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <!-- Hero Section -->
+     <section id="home" class="section">
+        <div class="content">
+            <h1 class="welcome">Welcome to My Portfolio</h1>
+        </div>
+    </section>
+    <img src="WhatsApp_Image_2024-09-06_at_14.30.13_e26d9b54-removebg-preview.png" alt="Your Name" class="profile-picture">
+    
+    <div class="spacer-1"></div> <!-- Add a spacer here -->
+    <div class="spacer-1"></div> <!-- Add a spacer here -->
+    
+    <section id="about-sec">
+        <h3>About Me</h3>
+        <div class="about-content">
+            <p>I am <p id="nitin"> Nitin Singh,</p>
+                a second-year B.Tech student specializing in Computer Science and Engineering at United College of Engineering and Research, Prayagraj, Uttar Pradesh. <br><br> With a strong foundation in programming and a passion for problem-solving, I am focused on building innovative solutions that address real-world challenges.
+          
+          My areas of interest include software development, web technologies, and emerging trends in AI and machine learning. I enjoy working on projects that combine creativity with functionality, emphasizing efficiency and user experience.
+          
+          Currently, I am honing my technical and collaborative skills by contributing to academic and extracurricular projects, including app development and web solutions, to prepare for a dynamic career in the tech industry. I am committed to continuous learning, teamwork, and delivering impactful results.
+          
+          Let’s connect to discuss ideas, projects, or opportunities to collaborate in creating meaningful innovations.</p>
+        </div>
+    </section>
+    
+      
+         <script>
+            const hamburger = document.getElementById("hamburger");s
+            const navLinks = document.getElementById("navLinks");
+        
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
+  <div class="spacer-2"></div> <!-- Add a spacer here -->
+    <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-box">
+        <h3>Project 1</h3>
+        <p>A brief description of your project goes here.</p>
+      </div>
+      <div class="project-box">
+        <h3>Project 2</h3>
+        <p>A brief description of your project goes here.</p>
+      </div>
+      <div class="project-box">
+        <h3>Project 3</h3>
+        <p>A brief description of your project goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-2"></div> <!-- Add a spacer here -->
+   <!-- Skills Section -->
+<section id="skills" class="section" id="skilled">
+  <h2>Skills <p>Programming Language</p></h2>
+  <div class="skills-box" id="skilled">
+    <div class="skills-container">
+      <div class="skill">
+        <div class="circle" data-percentage="80">
+          <span>HTML</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percentage="75">
+          <span>CSS</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percentage="45">
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percentage="45">
+          <span>Python</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percentage="5">
+          <span>React</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percentage="5">
+          <span>Node.js</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="spacer-2"></div> <!-- Add a spacer here -->
+
+<!--Contact Section-->
+  <section id="contact-section">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p>
+        If you have any questions or just want to say hello, feel free to contact me!
+      </p>
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="icon">📧</span>
+          <a href="mailto:nitinsingh6167@gmail.com">nitinsingh6167@gmail.com</a>
+        </div>
+        <div class="info-item">
+          <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+          <a href="https://www.instagram.com/thakurnitinsingh6167/"target="_blank">Nitin Singh</a>
+        </div>
+        <div class="info-item">
+          <span class="icon"><i style="font-size:24px" class="fa">&#xf08c;</i></span>
+          <a href="https://www.linkedin.com/in/thakur-nitin-ab998a274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Thakur Nitin</a>
+        </div>
+        <div class="info-item">
+          <span class="icon">📞</span>
+          <a href="tel:+918840036642">+91 8840036642</a>
+        </div>
+        <div class="info-item">
+          <span class="icon">📍</span>
+          <p>Prayagraj, Uttar Pradesh, India</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    
+  </section>
+  <div class="spacer-1"></div> <!-- Add a spacer here -->
+  <section><li></li><a href="#home" class="top">TOP</a></li></section>
+  
+  <div class="spacer-5"></div> <!-- Add a spacer here -->
+ <section>
+  <footer>
+    <p>© 2024 Nitin Singh. All rights reserved.</p>
+  </footer>
+</section>
+<script src="nit.js"></script>
+</body>
+</html>

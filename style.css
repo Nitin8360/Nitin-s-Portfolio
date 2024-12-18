@@ -96,7 +96,7 @@ footer {
       width: 0; /* Start with no text visible */
   }
   50% {
-      width: 14ch; /* Text fully typed */
+      width: 17ch; /* Text fully typed */
   }
   100% {
       width: 0; /* Reset to no text */

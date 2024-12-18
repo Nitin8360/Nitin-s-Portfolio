@@ -74,22 +74,38 @@ footer {
   -webkit-text-fill-color: transparent; /* Make text transparent */
   margin-bottom: 10px;
 }
-
-.title {
-  font-family: sans-serif;
-  color: whitesmoke;
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: 1.2;
+.typing-text {
+  font-size: 2rem;
+  color: white;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides the overflowing text */
+  border-right: 3px solid #d6ff00; /* Typing cursor */
+  width: 0; /* Start with no width */
+  animation: typing 7s steps(20, end) infinite, blink 0.6s infinite;
 }
 
-.highlight {
-  font-family: sans-serif;
-  color: #c2c2c2; /* White color for "Web Designer" */
-  border-bottom: 4px solid #2484fa; /* Yellow underline effect */
-  display: inline-block;
-  padding-bottom: 5px;
+.typing-text span {
+  color: #d6ff00; /* Neon yellow for "Web Designer" */
 }
+
+@keyframes typing {
+  0% {
+      width: 0; /* Start with no text visible */
+  }
+  50% {
+      width: 18ch; /* Text fully typed */
+  }
+  100% {
+      width: 0; /* Reset to no text */
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
 
 .description {
   font-family: sans-serif;
@@ -148,7 +164,7 @@ footer {
    @media (max-width: 460px) {
     .profile-picture {
       position: absolute;
-      top: 270px;
+      top: 285px;
     width: 100px;
     right: 20px;
     height: 100px;

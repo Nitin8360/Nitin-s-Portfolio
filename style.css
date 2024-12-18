@@ -68,6 +68,7 @@ footer {
 }
 
 .intro {
+  font-family: sans-serif;
   font-size: 1.2rem;
   background: linear-gradient(30deg, #ff7615, #e551ff); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
@@ -75,6 +76,7 @@ footer {
   margin-bottom: 10px;
 }
 .typing-text {
+  font-family: sans-serif;
   font-size: 2rem;
   color: white;
   white-space: nowrap; /* Prevents text from wrapping */
@@ -85,6 +87,7 @@ footer {
 }
 
 .typing-text span {
+  font-family: sans-serif;
   color: #d6ff00; /* Neon yellow for "Web Designer" */
 }
 

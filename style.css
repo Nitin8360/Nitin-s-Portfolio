@@ -177,25 +177,22 @@ footer {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
   color: white;
-  top: 100px;
+  top: 600px;
   white-space: nowrap;
   position: absolute;
-  animation: moveText 5s infinite;
-  opacity: 0;
+  left: 650px;
+  /* animation: moveText 5s infinite; */
+  /* opacity: 0;
   text-align: center;
   text-shadow: 3px #001c2d;
-  left: 50%;
-  overflow: hidden;
-  transform: translateX(-50%);
-  margin-bottom: 100px; /* Add this to push the About section down */
+  transform: translateX(-50%);*/
+  /* margin-bottom: 100px; */
 }
 @media (max-width: 468px) {
   .welcome {
-    display: flex;
     position: relative;
-    overflow: hidden;
     font-size: 7vw;
-    width: 340px;
+    left: 5px;
    
   }
 }

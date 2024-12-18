@@ -6,7 +6,6 @@ body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(45deg, #00070e, #000000, #00100e);
-  background-color: #000000;
   position: relative;
   background-attachment: fixed;
   background-size: 400% 400%;
@@ -208,7 +207,7 @@ footer {
   height: 20px; /* Adjust this height as needed */
 }
 
-@keyframes moveText {
+/* @keyframes moveText {
   0% {
     transform: translateX(-100%) translateX(-50%);
     opacity: 0;
@@ -221,12 +220,13 @@ footer {
     transform: translateX(100%) translateX(-50%);
     opacity: 0;
   }
-}
+} */
 
 /* Navbar styling */
 header {
   background-color: #000000;
   border-radius: 90px;
+  box-shadow: 0 3px 3px #2484fa;
   /* position: absolute; */
   position: fixed;
   top: 0;
@@ -349,6 +349,7 @@ header {
 }
 #nitin {
   font-weight: bold;
+  font-family: bradley hand, cursive;
   background: linear-gradient(30deg, #ff7615, #e551ff); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */

@@ -5,9 +5,11 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(45deg, #00070e, #060000, #00100e);
+  background: linear-gradient(45deg, #00070e, #000000, #00100e);
+  background-color: #000000;
+  position: relative;
+  background-attachment: fixed;
   background-size: 400% 400%;
-  background-attachment: fixed; 
   display: grid;
   place-items: center;
   overflow-x: hidden;
@@ -54,12 +56,87 @@ footer {
       border-radius: 20px;
   }
 }
+.hero-section {
+  position: absolute;
+  text-align: left;
+  padding: 20px;
+  top: 250px;
+  left: 80px;
+  max-width: 600px;
+  
+
+}
+
+.intro {
+  font-size: 1.2rem;
+  background: linear-gradient(30deg, #ff7615, #e551ff); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: sans-serif;
+  color: whitesmoke;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  font-family: sans-serif;
+  color: #c2c2c2; /* White color for "Web Designer" */
+  border-bottom: 4px solid #2484fa; /* Yellow underline effect */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.description {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #a2a2a2; /* Light gray text */
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.hire-btn {
+  font-family: sans-serif;
+  background-color: #2484fa; /* Neon yellow button */
+  text-decoration: none;
+  color: #ffffff; /* Black text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #003779; /* Slightly darker yellow */
+  transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+  .hero-section {
+    position: absolute;
+    top: 140px;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      width: 55%;
+      /* height: 75%;  */
+      left: 0;
+      /* left: 0px; */
+      border-radius: 20px;
+  }
+}
 .profile-picture {
   position: absolute;
   /* display: flex; */
-  top: 200px;
+  top: 299px;
   transform: none;
-  left: 650px;
+  right: 110px;
   width: 200px; /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
@@ -70,8 +147,10 @@ footer {
 /* For even smaller screens (mobile) */ 
    @media (max-width: 460px) {
     .profile-picture {
+      position: absolute;
+      top: 270px;
     width: 100px;
-    left: 160px;
+    right: 20px;
     height: auto;
   }
 }
@@ -127,7 +206,7 @@ footer {
 /* Navbar styling */
 header {
   background-color: #000000;
-  border-radius: 30px;
+  border-radius: 90px;
   /* position: absolute; */
   position: fixed;
   top: 0;
@@ -163,7 +242,9 @@ header {
 #singh{
   display: inline-block;
   font-family: "Exo 2", sans-serif;
-  color: white;
+  background: linear-gradient(45deg, #ff7615, #e551ff); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 #singh:hover{
   animation: bounce 0.7s ease;
@@ -206,12 +287,12 @@ header {
 
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   header {
-    width: 390px;
+    width: 379px;
     /* max-width: 100%; */
     /* padding: 10px; */
-    border-radius: 20px;
+    border-radius: 30px;
   }
 }
 
@@ -248,7 +329,7 @@ header {
 }
 #nitin {
   font-weight: bold;
-  background: linear-gradient(90deg, #ff7615, #e551ff); /* Gradient colors */
+  background: linear-gradient(30deg, #ff7615, #e551ff); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */
 }
@@ -329,7 +410,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 0px 2px 2px  #2ed5ff;
+    box-shadow: 0px 2px 2px  #006d89;
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;

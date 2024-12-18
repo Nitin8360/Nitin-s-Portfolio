@@ -305,7 +305,7 @@ header {
 /* Responsive Styles */
 @media (max-width: 468px) {
   header {
-    width: 399px;
+    width: 379px;
     /* max-width: 100%; */
     /* padding: 10px; */
     border-radius: 30px;

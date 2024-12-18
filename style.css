@@ -62,7 +62,7 @@ footer {
   padding: 20px;
   top: 250px;
   left: 80px;
-  max-width: 600px;
+  max-width: 400px;
   
 
 }
@@ -185,11 +185,14 @@ footer {
   text-align: center;
   text-shadow: 3px #001c2d;
   left: 50%;
+  overflow: hidden;
   transform: translateX(-50%);
   margin-bottom: 100px; /* Add this to push the About section down */
 }
 @media (max-width: 468px) {
   .welcome {
+    position: relative;
+    overflow: hidden;
     font-size: 7vw;
     width: 340px;
    

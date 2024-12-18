@@ -191,6 +191,7 @@ footer {
 }
 @media (max-width: 468px) {
   .welcome {
+    display: flex;
     position: relative;
     overflow: hidden;
     font-size: 7vw;

@@ -262,9 +262,7 @@ header {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  background: linear-gradient(45deg, #ff7615, #e551ff); /* Gradient colors */
-  -webkit-background-clip: text; /* Clip the background to text */
-  -webkit-text-fill-color: transparent; /* Make text transparent */
+ color:white ;
 }
 #singh:hover{
   animation: bounce 0.7s ease;
@@ -450,6 +448,16 @@ header {
     margin-bottom: 10px;
     font-family: "Exo 2", sans-serif;
     color: #ffffff; /* Highlighted color for project titles */
+}
+.project-box a {
+  position: relative;
+  left: 190px;
+  background-color: rgba(38, 29, 39, 0.474);
+  padding: 5px 5px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px  #006d89;
+  text-decoration: none;
+  color: rgb(238, 255, 0);
 }
 
 /* Paragraph Styling */

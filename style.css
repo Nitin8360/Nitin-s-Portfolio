@@ -403,6 +403,7 @@ header {
     -webkit-backdrop-filter: blur(10px);
     text-align: center;
     border-radius: 40px;
+    max-width: 800px;
 }
 
 #projects h2 {
@@ -451,7 +452,7 @@ header {
 }
 .project-box a {
   position: relative;
-  left: 190px;
+  left: 155px;
   background-color: rgba(38, 29, 39, 0.474);
   padding: 5px 5px;
   border-radius: 15px;
@@ -459,6 +460,10 @@ header {
   text-decoration: none;
   color: rgb(238, 255, 0);
 }
+#details1{
+  color: rgb(155, 99, 99);
+}
+
 
 /* Paragraph Styling */
 .project-box p {

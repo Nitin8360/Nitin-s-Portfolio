@@ -325,18 +325,49 @@ header {
 
 /* General Section Styling */
 #about-sec {
-  margin: 50px auto; 
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.418);
-  border: 1px solid rgba(48, 16, 7, 0.56);
-  max-width: 90%; /* Allows flexibility for smaller screens */
-  width: 790px; /* Retains a fixed width for larger screens */
-  box-shadow: 0 3px 3px #2484fa;
-  font-family: "Urbanist", sans-serif;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  text-align: center;
-  border-radius: 40px;
+  --border-width:1px;
+  
+    position: relative;
+   padding: 15px;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    background-color: rgba(0, 0, 0, 0.418);
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    border-radius:20px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+      );
+      background-size: 290% 290%;
+      background-position: 0 50%;
+      border-radius: 15px;
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
 }
 
 #about-sec h3 {
@@ -394,16 +425,49 @@ header {
 
 
 #projects {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.418);
-    border: 1px solid rgba(48, 16, 7, 0.56);
-    font-family: "Urbanist", sans-serif;
-    box-shadow: 0 3px 3px #2484fa;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    text-align: center;
-    border-radius: 40px;
-    max-width: 800px;
+  --border-width:1px;
+  
+  position: relative;
+ padding: 15px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  background-color: rgba(0, 0, 0, 0.418);
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+  border-radius:20px;
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 290% 290%;
+    background-position: 0 50%;
+    border-radius: 15px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 #projects h2 {
@@ -484,12 +548,49 @@ header {
 /* Skill Section */
 
 #skills {
-  padding: 1px;
-  border-radius: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.218);
-  border: 1px solid rgba(48, 16, 7, 0.56);
-  box-shadow: 0 3px 3px #2484fa;
+  --border-width:1px;
+  
+    position: relative;
+   padding: 15px;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    background-color: rgba(0, 0, 0, 0.418);
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    border-radius:20px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+      );
+      background-size: 290% 290%;
+      background-position: 0 50%;
+      border-radius: 15px;
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
 }
 
 #skills h2 {
@@ -608,19 +709,51 @@ header {
 
 /* Contact Section Styling */
 
-  .contact-container {
+  .contact-container{
+    --border-width:1px;
+  
+    position: relative;
+   padding: 15px;
     color: white;
     font-family: "Exo 2", sans-serif;
     background-color: rgba(0, 0, 0, 0.418);
-    border: 1px solid rgba(48, 16, 7, 0.56);
-    padding: 30px 20px;
-    border-radius: 25px;
-    box-shadow: 0 3px 4px #2484fa;
+    align-items: center;
     max-width: 500px;
     width: 100%;
     text-align: center;
+    background: #000000;
+    border-radius:20px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+      );
+      background-size: 290% 290%;
+      background-position: 0 50%;
+      border-radius: 15px;
+      animation: moveGradient 4s alternate infinite;
+    }
   }
   
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
   .contact-container h2 {
     font-family: "Urbanist", sans-serif;
     font-size: 1.8rem;

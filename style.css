@@ -5,14 +5,14 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(45deg, #00070e, #000000, #00100e);
+  background: linear-gradient(45deg, #000d19, #000000, #000911);
   position: relative;
   background-attachment: fixed;
   background-size: 400% 400%;
   display: grid;
   place-items: center;
   overflow-x: hidden;
-  animation: moveGradient 8s ease infinite;
+  animation: moveGradient 11s ease infinite;
 }
 
 /* Keyframes for moving the background gradient */
@@ -296,9 +296,9 @@ header {
   box-shadow: 0 3px 3px #2484fa;
   /* position: absolute; */
   position: fixed;
-  top: 0;
+ top: 0;
   /* left: 50px; */
-  width: 65%;
+  width: 55%;
   z-index: 1000;
 }
 
@@ -306,7 +306,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1px 15px;
+  padding: 0px 15px;
 }
 
 .navbar .logo a {

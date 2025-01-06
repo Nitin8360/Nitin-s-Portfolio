@@ -130,7 +130,7 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 9px;
   transition: all 0.3s ease;
   &::after {
     position: absolute;
@@ -153,7 +153,7 @@ footer {
     );
     background-size: 290% 290%;
     background-position: 0 50%;
-    border-radius: 15px;
+    border-radius: 9px;
     animation: moveGradient 4s alternate infinite;
   }
 }
@@ -165,7 +165,9 @@ footer {
 }
 
 .hire-btn:hover {
- color: #a2a2a2;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+ color: #2484fa;
   transform: translateY(-3px);
 }
 @media (max-width: 768px) {
@@ -491,14 +493,49 @@ header {
     color: #ffffff; /* Highlighted color for project titles */
 }
 .project-box a {
+  --border-width:1px;
+  position: relative;
   position: relative;
   left: 155px;
-  background-color: rgba(38, 29, 39, 0.474);
+  background: black;
   padding: 5px 5px;
-  border-radius: 15px;
-  box-shadow: 0px 2px 2px  #006d89;
+  border-radius: 8px;
   text-decoration: none;
-  color: rgb(238, 255, 0);
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(13, 97%, 53%),
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 290% 290%;
+    background-position: 0 50%;
+    border-radius: 8px;
+    animation: moveGradient 3s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.project-box a:hover{
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  color: rgb(49, 135, 255);
 }
 
 /* Paragraph Styling */
@@ -654,9 +691,8 @@ header {
 
   .contact-container{
     --border-width:1px;
-  
     position: relative;
-   padding: 15px;
+    padding: 15px;
     color: white;
     font-family: "Exo 2", sans-serif;
     background-color: rgba(0, 0, 0, 0.418);
@@ -757,22 +793,22 @@ header {
     padding: 10px;
     font-size: 1rem;
     color: white;
-    background-color: #13aa05;
+    background-color: #2484fa;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .contact-form button:hover {
-    background-color: rgb(13, 61, 0);
+    background-color: #144a8b;
   }
   @media (max-width: 768px) {
     #contact-section {
       position: relative;
         margin: 20px auto; /* Reduce top margin for smaller screens */
         padding: 15px;
-        width: 79%; 
-        right: 22px;
-        /* left: 5px; */
+        width: 58%; 
+        /* right: 22px; */
+        left: 72px;
         max-width: 100%;
         border-radius: 20px;
     }

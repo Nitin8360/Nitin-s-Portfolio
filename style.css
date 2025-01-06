@@ -118,8 +118,11 @@ footer {
 }
 
 .hire-btn {
+  --border-width:1px;
+  
+  position: relative;
   font-family: sans-serif;
-  background-color: #2484fa; /* Neon yellow button */
+  background-color: #000000; /* Neon yellow button */
   text-decoration: none;
   color: #ffffff; /* Black text */
   border: none;
@@ -127,13 +130,42 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
   transition: all 0.3s ease;
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 290% 290%;
+    background-position: 0 50%;
+    border-radius: 15px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .hire-btn:hover {
-  background-color: #003779; /* Slightly darker yellow */
+ color: #a2a2a2;
   transform: translateY(-3px);
 }
 @media (max-width: 768px) {
@@ -161,6 +193,7 @@ footer {
   border: 1px solid rgba(102, 39, 22, 0.56);
   box-shadow: 0px 4px 6px  #2484fa;
   overflow: -moz-hidden-unscrollable;
+  
 }
 /* For even smaller screens (mobile) */ 
    @media (max-width: 460px) {
@@ -325,49 +358,17 @@ header {
 
 /* General Section Styling */
 #about-sec {
-  --border-width:1px;
-  
-    position: relative;
-   padding: 15px;
     color: white;
     font-family: "Exo 2", sans-serif;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0.118);
     align-items: center;
     max-width: 950px;
     width: 100%;
     text-align: center;
-    background: #000000;
+    padding: 10px;
     border-radius:20px;
-    &::after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * var(--border-width));
-      left: calc(-1 * var(--border-width));
-      z-index: -1;
-      width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 290% 290%;
-      background-position: 0 50%;
-      border-radius: 15px;
-      animation: moveGradient 4s alternate infinite;
-    }
-  }
-  
-  @keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+    border: 1px solid rgb(30, 0, 0);
+    box-shadow: 0 3px 3px #2484fa;
 }
 
 #about-sec h3 {
@@ -431,43 +432,18 @@ header {
  padding: 15px;
   color: white;
   font-family: "Exo 2", sans-serif;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(0, 0, 0, 0.218);
   align-items: center;
-  max-width: 800px;
+  max-width: 55%;
   width: 100%;
   text-align: center;
-  background: #000000;
   border-radius:20px;
-  &::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    );
-    background-size: 290% 290%;
-    background-position: 0 50%;
-    border-radius: 15px;
-    animation: moveGradient 4s alternate infinite;
-  }
+  border: 1px solid rgb(30, 0, 0);
+    box-shadow: 0 3px 3px #2484fa;
 }
-
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
+#detail{
+  place-content: center;
+  color: #ad2b4b;
 }
 
 #projects h2 {
@@ -494,7 +470,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 0px 2px 2px  #006d89;
+    box-shadow: 0 3px 3px #315fb9;
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;
@@ -524,10 +500,6 @@ header {
   text-decoration: none;
   color: rgb(238, 255, 0);
 }
-#details1{
-  color: rgb(155, 99, 99);
-}
-
 
 /* Paragraph Styling */
 .project-box p {
@@ -554,43 +526,14 @@ header {
    padding: 15px;
     color: white;
     font-family: "Exo 2", sans-serif;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0.218);
     align-items: center;
     max-width: 500px;
-    width: 100%;
+    width: 79%;
     text-align: center;
-    background: #000000;
     border-radius:20px;
-    &::after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * var(--border-width));
-      left: calc(-1 * var(--border-width));
-      z-index: -1;
-      width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 290% 290%;
-      background-position: 0 50%;
-      border-radius: 15px;
-      animation: moveGradient 4s alternate infinite;
-    }
-  }
-  
-  @keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+    border: 1px solid rgb(30, 0, 0);
+    box-shadow: 0 3px 3px #2484fa;
 }
 
 #skills h2 {
@@ -700,7 +643,7 @@ header {
     position: relative;
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
-      width: 89%; 
+      width: 83%; 
       left: 0px;
       max-width: 100%;
       border-radius: 20px;
@@ -718,8 +661,9 @@ header {
     font-family: "Exo 2", sans-serif;
     background-color: rgba(0, 0, 0, 0.418);
     align-items: center;
-    max-width: 500px;
-    width: 100%;
+    right: 133px;
+    max-width: 900px;
+    width: 140%;
     text-align: center;
     background: #000000;
     border-radius:20px;
@@ -744,7 +688,7 @@ header {
       );
       background-size: 290% 290%;
       background-position: 0 50%;
-      border-radius: 15px;
+      border-radius: 17px;
       animation: moveGradient 4s alternate infinite;
     }
   }

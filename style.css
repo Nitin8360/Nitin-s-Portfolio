@@ -43,16 +43,14 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
-  box-shadow: 0px 0px 7px  #2484fa;
+  box-shadow: 0px 0px 5px  #2484fa;
 }
 @media (max-width: 768px) {
   footer {
     position: relative;
-      margin: 20px auto; /* Reduce top margin for smaller screens */
-      left: 1px;
       padding: 15px;
-      width: 95%; 
-      /* left: 0px; */
+      width: 85%; 
+      left: 1px;
       border-radius: 20px;
   }
 }
@@ -125,7 +123,7 @@ footer {
   font-family: sans-serif;
   background-color: #000000; /* Neon yellow button */
   text-decoration: none;
-  color: #ffffff; /* Black text */
+  color: #ffffffd5; /* Black text */
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -168,9 +166,42 @@ footer {
 .hire-btn:hover {
   transition: 0.3s ease-in-out;
   border-radius: 50%;
- color: #2484fa;
+ color: #ffffff;
   transform: translateY(-3px);
 }
+.icon {
+  position: relative;
+  left: 150px;
+  margin: 8px;
+  font-size: 24px;
+  bottom: 20px;
+}
+
+.icon a {
+  color: inherit; /* Inherit the color from the parent */
+  text-decoration: none; /* Remove underline */
+}
+
+.icon.instagram i {
+  color: #e44079; /* Instagram's primary color */
+}
+
+.icon.linkedin i {
+  color: #0A66C2; /* LinkedIn's primary color */
+}
+
+.icon.facebook i {
+  color: #0076e3; /* Facebook's primary color */
+}
+.icon.whatsapp i {
+  color: #25D366; /* WhatsApp's primary color */
+}
+
+.icon i:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.2; /* Add a hover effect */
+}
+
 @media (max-width: 768px) {
   .hero-section {
     position: absolute;
@@ -758,9 +789,9 @@ header {
     margin-bottom: 10px;
   }
   
-  .info-item .icon {
+  .info-item .icon1 {
     font-size: 1.2rem;
-    color: #5a5af7;
+    color: #8b00d5;
   }
   
   .info-item a, 

@@ -43,14 +43,14 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
-  box-shadow: 5px 0px 7px  #2484fa;
+  box-shadow: 0px 0px 7px  #2484fa;
 }
 @media (max-width: 768px) {
   footer {
     position: relative;
       margin: 20px auto; /* Reduce top margin for smaller screens */
-      padding: 15px;
-      width: 78%; 
+      left: 2px;
+      width: 95%; 
       /* left: 0px; */
       border-radius: 20px;
   }

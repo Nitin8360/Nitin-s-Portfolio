@@ -5,18 +5,19 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(45deg, #000d19, #000000, #000911);
+  background: black;
+  /* background: linear-gradient(45deg, #000d19, #000000, #000911); */
   position: relative;
   background-attachment: fixed;
   background-size: 400% 400%;
   display: grid;
   place-items: center;
   overflow-x: hidden;
-  animation: moveGradient 11s ease infinite;
+  /* animation: moveGradient 11s ease infinite; */
 }
 
 /* Keyframes for moving the background gradient */
-@keyframes moveGradient {
+/* @keyframes moveGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -26,7 +27,7 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 /* @media (max-width: 968px) {
   body {
     width: 850px;
@@ -109,7 +110,7 @@ footer {
 
 
 .description {
-  font-family: sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 1rem;
   color: #a2a2a2; /* Light gray text */
   margin: 20px 0;
@@ -196,6 +197,9 @@ footer {
 .icon.whatsapp i {
   color: #25D366; /* WhatsApp's primary color */
 }
+.icon.github i {
+  color: #ffffff; /* WhatsApp's primary color */
+}
 
 .icon i:hover {
   transition: 0.3s ease-in-out;
@@ -246,20 +250,13 @@ footer {
   top: 600px;
   white-space: nowrap;
   position: absolute;
-  left: 650px;
-  /* animation: moveText 5s infinite; */
-  /* opacity: 0;
   text-align: center;
   text-shadow: 3px #001c2d;
-  transform: translateX(-50%);*/
-  /* margin-bottom: 100px; */
+  transform: translateX(-50%);
 }
 @media (max-width: 468px) {
   .welcome {
-    position: relative;
     font-size: 7vw;
-    left: 5px;
-   
   }
 }
 .spacer-1 {
@@ -374,7 +371,7 @@ header {
 /* Responsive Styles */
 @media (max-width: 468px) {
   header {
-    width: 379px;
+    width: 389px;
     /* max-width: 100%; */
     /* padding: 10px; */
     border-radius: 30px;

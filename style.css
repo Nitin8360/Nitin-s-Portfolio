@@ -427,7 +427,7 @@ header {
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
       width: 78%; 
-      /* left: 0px; */
+      left: 4px;
       border-radius: 20px;
   }
 
@@ -457,8 +457,6 @@ header {
 
 
 #projects {
-  --border-width:1px;
-  
   position: relative;
  padding: 15px;
   color: white;
@@ -578,6 +576,7 @@ header {
     position: relative;
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
+      left: 4px;
       width: 79%;
       max-width: 100%;
       border-radius: 20px;
@@ -715,7 +714,11 @@ header {
       border-radius: 20px;
   }
 }
-
+@media (max-width: 768px) {
+  #skills {
+    left: 4px;
+  }
+}
 /* Contact Section Styling */
 
   .contact-container{
@@ -837,7 +840,7 @@ header {
         padding: 15px;
         width: 58%; 
         /* right: 22px; */
-        left: 72px;
+        left: 77px;
         max-width: 100%;
         border-radius: 20px;
     }

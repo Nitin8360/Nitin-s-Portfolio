@@ -427,7 +427,7 @@ header {
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
       width: 78%; 
-      left: 4px;
+      left: 2px;
       border-radius: 20px;
   }
 
@@ -576,7 +576,7 @@ header {
     position: relative;
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
-      left: 4px;
+      left: 2px;
       width: 79%;
       max-width: 100%;
       border-radius: 20px;
@@ -716,7 +716,7 @@ header {
 }
 @media (max-width: 768px) {
   #skills {
-    left: 4px;
+    left: 2px;
   }
 }
 /* Contact Section Styling */
@@ -840,7 +840,7 @@ header {
         padding: 15px;
         width: 58%; 
         /* right: 22px; */
-        left: 77px;
+        left: 68px;
         max-width: 100%;
         border-radius: 20px;
     }

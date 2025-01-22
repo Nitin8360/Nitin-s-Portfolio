@@ -427,7 +427,7 @@ header {
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
       width: 78%; 
-      left: 1px;
+      left: 0px;
       border-radius: 20px;
   }
 
@@ -484,7 +484,7 @@ header {
 
 /* Container Styling */
 .projects-container {
-    display: flex;
+    display:flex;
     flex-wrap: wrap; /* Allows items to wrap to the next row if necessary */
     gap: 20px; /* Adds space between project boxes */
     justify-content: center;
@@ -840,7 +840,7 @@ header {
         padding: 15px;
         width: 58%; 
         /* right: 22px; */
-        left: 68px;
+        left: 69px;
         max-width: 100%;
         border-radius: 20px;
     }

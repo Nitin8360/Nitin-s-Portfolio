@@ -427,7 +427,7 @@ header {
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
       width: 78%; 
-      left: 2px;
+      left: 1px;
       border-radius: 20px;
   }
 
@@ -541,7 +541,7 @@ header {
     background: linear-gradient(
       60deg,
       hsl(13, 97%, 53%),
-      hsl(224, 85%, 66%),
+      hsl(0, 91%, 14%),
       hsl(269, 85%, 66%),
       hsl(314, 85%, 66%),
       hsl(359, 85%, 66%),
@@ -576,7 +576,7 @@ header {
     position: relative;
       margin: 20px auto; /* Reduce top margin for smaller screens */
       padding: 15px;
-      left: 2px;
+      left: 1px;
       width: 79%;
       max-width: 100%;
       border-radius: 20px;
@@ -716,7 +716,7 @@ header {
 }
 @media (max-width: 768px) {
   #skills {
-    left: 2px;
+    left: 1px;
   }
 }
 /* Contact Section Styling */

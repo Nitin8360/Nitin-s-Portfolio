@@ -44,7 +44,7 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
-  box-shadow: 0px 0px 5px  #2484fa;
+  box-shadow: 0px 0px 5px  #00000000;
 }
 @media (max-width: 768px) {
   footer {
@@ -87,7 +87,8 @@ footer {
 
 .typing-text span {
   font-family: sans-serif;
-  color: #d6ff00; /* Neon yellow for "Web Designer" */
+  text-shadow: 0px 4px 5px rgb(255, 233, 154);
+  color: #ffe100;
 }
 
 @keyframes typing {
@@ -228,8 +229,8 @@ footer {
   width: 200px; /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
-  border: 1px solid rgba(102, 39, 22, 0.56);
-  box-shadow: 0px 4px 6px  #2484fa;
+  border: 1px solid rgba(255, 189, 255, 0.693);
+  box-shadow: 0 0px 15px #f0bdff;
   overflow: -moz-hidden-unscrollable;
   
 }
@@ -246,7 +247,7 @@ footer {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  color: white;
+  color: rgb(255, 223, 251);
   top: 600px;
   white-space: nowrap;
   position: absolute;
@@ -290,13 +291,19 @@ footer {
 header {
   background-color: #000000;
   border-radius: 90px;
-  box-shadow: 0 3px 3px #2484fa;
+  border: 1px solid rgb(255, 185, 255);
+  box-shadow: 0 3px 7px #f0b6ffd1;
   /* position: absolute; */
   position: fixed;
  top: 0;
   /* left: 50px; */
   width: 55%;
   z-index: 1000;
+  transition: transform 0.4s, box-shadow 3s;
+}
+header:hover {
+  transform: translateY(5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -330,7 +337,7 @@ header {
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: #2484fa;
+  color: hsl(319, 100%, 91%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -351,7 +358,7 @@ header {
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #2484fa;
+  color: #f9c3ff;
 }
 @keyframes bounce {
   0%, 100% {
@@ -398,10 +405,14 @@ header {
     text-align: center;
     padding: 10px;
     border-radius:20px;
-    border: 1px solid rgb(30, 0, 0);
-    box-shadow: 0 3px 3px #2484fa;
+    border: 1px solid rgba(250, 192, 250, 0.542);
+  box-shadow: 0 5px 20px #9b86aa8c;
+  transition: transform 1s, box-shadow 0.5s;
 }
-
+#about-sec:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 #about-sec h3 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -467,8 +478,8 @@ header {
   width: 100%;
   text-align: center;
   border-radius:20px;
-  border: 1px solid rgb(30, 0, 0);
-    box-shadow: 0 3px 3px #2484fa;
+  border: 1px solid rgba(250, 192, 250, 0.542);
+  box-shadow: 0 5px 20px #9b86aa8c;
 }
 #detail{
   place-content: center;
@@ -493,22 +504,22 @@ header {
 /* Individual Project Box Styling */
 .project-box {
     background-color: rgba(0, 0, 0, 0.118);
-   border: 1px solid rgba(48, 16, 7, 0.56);
+   border: 1px solid rgba(255, 254, 253, 0.126);
 
     font-family: "Urbanist", sans-serif;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)brightness(1);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 0 3px 3px #315fb9;
+    box-shadow: 0 3px 5px #f3dbf590;
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;
-    transition: transform 0.3s, box-shadow 0.4s; /* Adds a hover effect */
+    transition: transform 0.4s, box-shadow 0.4s; /* Adds a hover effect */
 }
 
 /* Hover Effect */
 .project-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-30px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -540,17 +551,19 @@ header {
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       60deg,
-      hsl(13, 97%, 53%),
-      hsl(0, 91%, 14%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(179, 85%, 66%)
+      hsl(0, 0%, 0%),
+      hsl(0, 0%, 0%),
+      hsl(312, 100%, 50%),
+      hsl(287, 17%, 78%),
+      hsl(297, 31%, 76%),
+      hsl(305, 100%, 63%),
+      hsl(0, 0%, 0%),
+      hsl(0, 0%, 0%)
     );
     background-size: 290% 290%;
     background-position: 0 50%;
     border-radius: 8px;
-    animation: moveGradient 3s alternate infinite;
+    animation: moveGradient 4s alternate infinite;
   }
 }
 
@@ -597,8 +610,8 @@ header {
     width: 79%;
     text-align: center;
     border-radius:20px;
-    border: 1px solid rgb(30, 0, 0);
-    box-shadow: 0 3px 3px #2484fa;
+    border: 1px solid rgba(250, 192, 250, 0.542);
+    box-shadow: 0 5px 20px #9b86aa8c;
 }
 
 #skills h2 {
@@ -614,7 +627,7 @@ header {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.545));
   border-radius: 20px;
   padding: 100px ;
-  border: 1px solid rgb(30, 0, 0);
+  border: 1px solid rgba(255, 213, 252, 0.37);
   position: relative;
   overflow: hidden;
 }
@@ -626,7 +639,7 @@ header {
   left: -50%;
   width: 90%;
   height: 50%;
-  background: radial-gradient(circle at 25% 25%, rgba(160, 160, 160, 0.24), rgba(0, 0, 0, 0.286));
+  background: radial-gradient(circle at 30% 30%, rgba(0, 100, 117, 0.697), rgba(255, 255, 255, 0.659),rgba(177, 54, 1, 0.621));
   z-index: 0;
   transform: rotate(45deg);
   animation: glossy-glow 8s linear infinite;
@@ -644,7 +657,7 @@ header {
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjusted for smaller circles */
-  gap: 1.5rem;
+  gap: 1.8rem;
   justify-items: center;
   position: relative;
   z-index: 1;
@@ -657,13 +670,18 @@ header {
   height: 70px; /* Smaller size */
   background: #ffffff7e;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(59, 59, 59, 0.5), inset 0 -10px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0px 15px rgba(255, 255, 255, 0.5), inset 0 -10px 15px rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   color: #d43535;
   overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.circle:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .circle:before {
@@ -674,7 +692,7 @@ header {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #2484fa calc(var(--percentage) * 1%),
+    #3073d6 calc(var(--percentage) * 1%),
     #ffffff 0);
   border-radius: 50%;
   z-index: 1;
@@ -701,7 +719,7 @@ header {
 
 /* Animation */
 .circle:hover {
-  box-shadow: 0 0 15px #2B2B2B, 0 0 30px #605a00;
+  box-shadow: 0 0 15px #8f8f8f, 0 0 30px #febeffca;
 }
 @media (max-width: 768px) {
   #skilled {
@@ -745,14 +763,14 @@ header {
       height: calc(100% + var(--border-width) * 2);
       background: linear-gradient(
         60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
+        hsl(0, 100%, 79%),
+        hsl(268, 100%, 80%),
+        hsl(314, 100%, 90%),
+        hsl(358, 100%, 86%),
+        hsl(50, 100%, 86%),
+        hsl(224, 100%, 85%),
+        hsl(13, 100%, 84%),
+        hsl(0, 100%, 79%)
       );
       background-size: 290% 290%;
       background-position: 0 50%;

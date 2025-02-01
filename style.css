@@ -295,7 +295,7 @@ header {
   box-shadow: 0 3px 7px #f0b6ffd1;
   /* position: absolute; */
   position: fixed;
- top: 3px;
+ top: 2px;
   /* left: 50px; */
   width: 55%;
   z-index: 1000;

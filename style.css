@@ -333,7 +333,7 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  color: hsl(319, 100%, 91%);
+  color: hsl(320, 100%, 88%);
 }
 #singh:hover{
   animation: bounce 0.7s ease;

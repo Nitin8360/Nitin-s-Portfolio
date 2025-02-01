@@ -358,7 +358,7 @@ header:hover {
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #f59eff;
+  color: #f27eff;
 }
 @keyframes bounce {
   0%, 100% {

@@ -333,11 +333,11 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
- color:white ;
+  color: hsl(319, 100%, 91%);
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: hsl(319, 100%, 91%);
+  color: hsl(320, 12%, 55%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -352,7 +352,7 @@ header:hover {
   text-decoration: none;
   padding: 8px 15px;
   font-family: "Exo 2", sans-serif;
-  color: white;
+  color: hsl(321, 100%, 94%);
 }
 
 /* Hover effect */

@@ -87,7 +87,7 @@ footer {
 
 .typing-text span {
   font-family: sans-serif;
-  text-shadow: 0px 4px 5px rgb(255, 233, 154);
+  text-shadow: 0px 3px 5px rgb(255, 233, 154);
   color: #ffe100;
 }
 
@@ -358,7 +358,7 @@ header:hover {
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #f9c3ff;
+  color: #f59eff;
 }
 @keyframes bounce {
   0%, 100% {
@@ -407,7 +407,7 @@ header:hover {
     border-radius:20px;
     border: 1px solid rgba(250, 192, 250, 0.542);
   box-shadow: 0 5px 20px #9b86aa8c;
-  transition: transform 1s, box-shadow 0.5s;
+  transition: transform 1s, box-shadow 0.7s;
 }
 #about-sec:hover {
   transform: translateY(-20px);
@@ -480,6 +480,11 @@ header:hover {
   border-radius:20px;
   border: 1px solid rgba(250, 192, 250, 0.542);
   box-shadow: 0 5px 20px #9b86aa8c;
+  transition: transform 1s, box-shadow 0.7s;
+}
+#projects:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 #detail{
   place-content: center;
@@ -514,7 +519,7 @@ header:hover {
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;
-    transition: transform 0.4s, box-shadow 0.4s; /* Adds a hover effect */
+    transition: transform 0.4s, box-shadow 0.7s; /* Adds a hover effect */
 }
 
 /* Hover Effect */
@@ -598,9 +603,7 @@ header:hover {
 /* Skill Section */
 
 #skills {
-  --border-width:1px;
-  
-    position: relative;
+   position: relative;
    padding: 15px;
     color: white;
     font-family: "Exo 2", sans-serif;
@@ -612,6 +615,11 @@ header:hover {
     border-radius:20px;
     border: 1px solid rgba(250, 192, 250, 0.542);
     box-shadow: 0 5px 20px #9b86aa8c;
+    transition: transform 1s, box-shadow 0.7s;
+}
+#skills:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #skills h2 {
@@ -630,6 +638,11 @@ header:hover {
   border: 1px solid rgba(255, 213, 252, 0.37);
   position: relative;
   overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.skills-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .skills-box:before {

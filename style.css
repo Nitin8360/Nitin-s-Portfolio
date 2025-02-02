@@ -947,7 +947,7 @@ header:hover {
 /* Responsive Design */
 @media(max-width:468px){
   footer{
-    width: 255px;
+    width: 245px;
   }
 }
 @media (max-width: 468px) {

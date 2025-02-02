@@ -11,3 +11,22 @@ document.querySelectorAll('.circle').forEach(circle => {
     circle.style.setProperty('--percentage', percentage);
   });
   
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+  
+  // Check saved theme from localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-theme");
+  }
+  
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+  
+    // Save user preference
+    if (body.classList.contains("dark-theme")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+  

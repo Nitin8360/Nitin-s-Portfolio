@@ -94,7 +94,7 @@ body {
 .description {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
-  color: #a2a2a2; /* Light gray text */
+  color: #9c8795; /* Light gray text */
   margin: 20px 0;
   line-height: 1.6;
 }
@@ -391,7 +391,7 @@ header:hover {
   transition: transform 1s, box-shadow 0.7s;
 }
 #about-sec:hover {
-  transform: translateY(-20px);
+  transform: translateY(-30px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 #about-sec h3 {
@@ -408,7 +408,7 @@ header:hover {
   -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 .about-content {
-  color: #a2a2a2;
+  color: #988c97;
   font-family: "Exo 2", sans-serif;
 }
 
@@ -505,7 +505,7 @@ header:hover {
 
 /* Hover Effect */
 .project-box:hover {
-    transform: translateY(-30px);
+    transform: translateY(-40px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -599,7 +599,7 @@ header:hover {
     transition: transform 1s, box-shadow 0.7s;
 }
 #skills:hover {
-  transform: translateY(-20px);
+  transform: translateY(-30px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 

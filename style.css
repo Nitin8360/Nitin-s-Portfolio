@@ -35,26 +35,7 @@ body {
     transform: none;
     text-align: center; /* Center the content within the header */
   
- 
-/* Footer Styling */
-footer {
-  text-align: center;
-  color: white;
-  padding: 10px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
-  box-shadow: 0px 0px 5px  #00000000;
-}
-@media (max-width: 768px) {
-  footer {
-    position: relative;
-      padding: 15px;
-      width: 85%; 
-      left: 1px;
-      border-radius: 20px;
-  }
-}
+
 .hero-section {
   position: absolute;
   text-align: left;
@@ -171,7 +152,7 @@ footer {
  color: #ffffff;
   transform: translateY(-3px);
 }
-.icon {
+.info-item1 .icon{
   position: relative;
   left: 125px;
   margin: 8px;
@@ -185,21 +166,21 @@ footer {
 }
 
 .icon.instagram i {
-  color: #e44079; /* Instagram's primary color */
+  color: #f0bdff; /* Instagram's primary color */
 }
 
 .icon.linkedin i {
-  color: #0A66C2; /* LinkedIn's primary color */
+  color: #f0bdff; /* LinkedIn's primary color */
 }
 
 .icon.facebook i {
-  color: #0076e3; /* Facebook's primary color */
+  color: #f0bdff; /* Facebook's primary color */
 }
 .icon.whatsapp i {
-  color: #25D366; /* WhatsApp's primary color */
+  color: #f0bdff; /* WhatsApp's primary color */
 }
 .icon.github i {
-  color: #ffffff; /* WhatsApp's primary color */
+  color: #f0bdff; /* WhatsApp's primary color */
 }
 
 .icon i:hover {
@@ -855,14 +836,14 @@ header:hover {
   .contact-form button {
     padding: 10px;
     font-size: 1rem;
-    color: white;
-    background-color: #2484fa;
+    color: rgb(0, 0, 0);
+    background-color: #faaeff;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .contact-form button:hover {
-    background-color: #144a8b;
+    background-color: #af3a92;
   }
   @media (max-width: 768px) {
     #contact-section {
@@ -917,3 +898,66 @@ header:hover {
         border-radius: 20px;
     }
   }
+  footer {
+    background: linear-gradient(to right, #0000001a, #00191e62);
+    color: rgb(255, 217, 252);
+    padding: 5rem;
+    text-align: left;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid rgb(255, 213, 255);
+    box-shadow: 0 0px 30px #9b86aa8c;
+}
+.info-item2 .icon{
+  position: relative;
+  top: 50px;
+  left: 5px;
+  margin: 8px;
+  font-size: 24px;
+  bottom: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-right {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-right a {
+    color: rgb(255, 206, 247);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.footer-right a:hover {
+    color: #ff8eff;
+}
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* Responsive Design */
+@media(max-width:468px){
+  footer{
+    width: 225px;
+  }
+}
+@media (max-width: 468px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-right {
+        flex-direction: column;
+        gap: 0.9rem;
+        margin-top: 1rem;
+    }
+}

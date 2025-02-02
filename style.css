@@ -900,7 +900,7 @@ header:hover {
   }
   footer {
     background: linear-gradient(to right, #0000001a, #00191e62);
-    color: rgb(255, 217, 252);
+    color: rgb(255, 255, 255);
     padding: 5rem;
     text-align: left;
     border-radius: 20px;

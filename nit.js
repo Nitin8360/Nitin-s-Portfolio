@@ -32,4 +32,3 @@ document.querySelectorAll('.circle').forEach(circle => {
   document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("loaded");
 });
-  

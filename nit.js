@@ -29,6 +29,3 @@ document.querySelectorAll('.circle').forEach(circle => {
       localStorage.setItem("theme", "light");
     }
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("loaded");
-});

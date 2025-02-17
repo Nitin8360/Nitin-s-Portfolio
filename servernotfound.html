@@ -6,21 +6,29 @@
   <title>Server Not Found</title>
   <style>
    body {
-  margin: 0;
-  height: 100vh;
+    background: linear-gradient(45deg, #000d19, #000000, #000911);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    /* this property use for fix the the image */
+    background-attachment: fixed; 
+    background-size: 100% auto;
   text-align: center;
-      margin: 50px;
+      /* margin: 80px; */
 }
     .error-container {
       margin-top: 100px;
       padding: 20px;
-      background-color: rgb(255, 255, 255);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.426);
+      background-color: rgba(0, 0, 0, 0.592);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 3px 14px rgb(188, 209, 255);
+      border: 1px solid rgb(177, 219, 255);
       display: inline-block;
-      border-radius: 8px;
+      border-radius: 10px;
     }
     h1 {
-      color: #dc3545;
+      color: #dc3535;
     }
     p {
       color: #6c757d;

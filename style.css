@@ -177,21 +177,21 @@ body {
 }
 
 .icon.instagram i {
-  color: #f0bdff; /* Instagram's primary color */
+  color: #ff2a7f; /* Instagram's primary color */
 }
 
 .icon.linkedin i {
-  color: #f0bdff; /* LinkedIn's primary color */
+  color: #0088ff; /* LinkedIn's primary color */
 }
 
 .icon.facebook i {
-  color: #f0bdff; /* Facebook's primary color */
+  color: #3b5998; /* Facebook's primary color */
 }
 .icon.whatsapp i {
-  color: #f0bdff; /* WhatsApp's primary color */
+  color: #00e72a; /* WhatsApp's primary color */
 }
 .icon.github i {
-  color: #f0bdff; /* WhatsApp's primary color */
+  color: #ffffff; /* WhatsApp's primary color */
 }
 
 .icon i:hover {

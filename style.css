@@ -185,7 +185,7 @@ body {
 }
 
 .icon.facebook i {
-  color: #3b5998; /* Facebook's primary color */
+  color: #366ec3; /* Facebook's primary color */
 }
 .icon.whatsapp i {
   color: #00e72a; /* WhatsApp's primary color */
@@ -812,9 +812,13 @@ header:hover {
     margin-bottom: 10px;
   }
   
-  .info-item .icon1 {
+  .info-item .icon2 {
     font-size: 1.2rem;
-    color: #8b00d5;
+    color: rgb(200, 49, 129);
+  }
+  .info-item .icon3 {
+    font-size: 1.2rem;
+    color: #357edc;
   }
   
   .info-item a, 
@@ -828,14 +832,14 @@ header:hover {
     text-decoration: underline;
   }
   
-  .contact-form {
+  #contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  .contact-form input,
-  .contact-form textarea {
+  #contact-form input,
+  #contact-form textarea {
     padding: 10px;
     font-size: 0.9rem;
     border: 1px solid #5e5e5e;
@@ -844,7 +848,7 @@ header:hover {
     box-sizing: border-box;
   }
   
-  .contact-form button {
+  #contact-form button {
     padding: 10px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
@@ -853,7 +857,7 @@ header:hover {
     cursor: pointer;
   }
   
-  .contact-form button:hover {
+  #contact-form button:hover {
     background-color: #af3a92;
   }
   @media (max-width: 768px) {
@@ -868,47 +872,7 @@ header:hover {
         border-radius: 20px;
     }
   }
-  .top{
-    display: inline-block;
-    position: relative;
-  text-align: center;
-  bottom: 9px;
-  font-family: "Exo 2", sans-serif;
-  font-size: small;
-  color: white;
-  text-decoration: none;
-  padding: 1px 1px;
-  right: 700px;
-  width: 47px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
-  border: 1px solid rgba(48, 16, 7, 0.56);
-  box-shadow: 0 3px 4px #2484fa;
-  }
-  .top:hover {
-    animation: bounce 0.7s ease;
-    color: #2484fa;
-  }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-     50% {
-      transform: translateY(-10px); /* Adjust bounce height */
-    }
-  }
   
-  @media (max-width: 768px) {
-    .top {
-      position: relative;
-        margin: 10px; /* Reduce top margin for smaller screens */
-        padding: 5px;
-        right: 165px;
-        /* left: 5px; */
-        /* max-width: 100%; */
-        border-radius: 20px;
-    }
-  }
   footer {
     background: linear-gradient(to right, #0000001a, #0f0b0fe8);
     color: rgb(255, 255, 255);

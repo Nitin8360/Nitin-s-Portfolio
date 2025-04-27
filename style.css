@@ -284,7 +284,7 @@ header {
   background-color: #000000;
   border-radius: 90px;
   border: 1px solid rgba(134, 128, 107, 0.542);
-  box-shadow: 0 2px 20px #6b60539e;
+  box-shadow: 0 2px 12px #6b60539e;
   /* position: absolute; */
  position: fixed;
  top: 2px;

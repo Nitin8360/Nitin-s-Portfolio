@@ -61,7 +61,7 @@ body {
 .intro {
   font-family: sans-serif;
   font-size: 1.2rem;
-  background: linear-gradient(50deg, #90e7ffcc,#335058cc); /* Gradient colors */
+  background: linear-gradient(1deg, #59e6ff,#000000cc); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */
   margin-bottom: 10px;
@@ -222,7 +222,7 @@ body {
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
   border: 1px solid rgba(154, 224, 232, 0.693);
-  box-shadow: 0 0px 15px #81e8ffad;
+  box-shadow: 0 0px 15px #4dc2e6ad;
   overflow: -moz-hidden-unscrollable;
   
 }
@@ -283,7 +283,7 @@ body {
 header {
   background-color: #000000;
   border-radius: 90px;
-  border: 2px solid rgb(0, 105, 119);
+  border: 2px solid rgb(79, 200, 216);
   box-shadow: 0 3px 7px #50dfff;
   /* position: absolute; */
  position: fixed;

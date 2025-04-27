@@ -61,7 +61,7 @@ body {
 .intro {
   font-family: sans-serif;
   font-size: 1.2rem;
-  background: linear-gradient(1deg, #59e6ff,#000000cc); /* Gradient colors */
+  background: linear-gradient(171deg, #44c7ff,#00ccffc7); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */
   margin-bottom: 10px;
@@ -105,7 +105,7 @@ body {
 .description {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
-  color: #87999c; /* Light gray text */
+  color: #a39888d8; /* Light gray text */
   margin: 20px 0;
   line-height: 1.6;
 }
@@ -117,7 +117,7 @@ body {
   font-family: sans-serif;
   background-color: #000000; /* Neon yellow button */
   text-decoration: none;
-  color: #ffffffd5; /* Black text */
+  color: #e3d3b1; /* Black text */
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -160,7 +160,7 @@ body {
 .hire-btn:hover {
   transition: 0.3s ease-in-out;
   border-radius: 50%;
- color: #ffffff;
+ color: #ffe0ab;
   transform: translateY(-3px);
 }
 .info-item1 .icon{
@@ -221,8 +221,8 @@ body {
   width: 200px; /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
-  border: 1px solid rgba(154, 224, 232, 0.693);
-  box-shadow: 0 0px 15px #4dc2e6ad;
+  border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 5px 20px #7e7162c8;
   overflow: -moz-hidden-unscrollable;
   
 }
@@ -239,7 +239,7 @@ body {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  color: hsl(0, 0%, 100%);
+  color: hsla(31, 25%, 66%, 0.775);
   top: 600px;
   white-space: nowrap;
   position: absolute;
@@ -283,8 +283,8 @@ body {
 header {
   background-color: #000000;
   border-radius: 90px;
-  border: 1px solid rgb(79, 200, 216);
-  box-shadow: 0 3px 7px #50dfff;
+  border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 5px 20px #6b6053c8;
   /* position: absolute; */
  position: fixed;
  top: 2px;
@@ -325,11 +325,11 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  color: #90e7ffcc;
+  color: #ffcfa2f0;
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: hsl(189, 12%, 55%);
+  color: hsl(30, 28%, 60%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -344,13 +344,13 @@ header:hover {
   text-decoration: none;
   padding: 8px 15px;
   font-family: "Exo 2", sans-serif;
-  color: #d0f9ffde;
+  color: #ffe2c3de;
 }
 
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #6de4ff;
+  color: #ffc58e;
 }
 @keyframes bounce {
   0%, 100% {
@@ -397,8 +397,8 @@ header:hover {
     text-align: center;
     padding: 10px;
     border-radius:20px;
-    border: 1px solid rgba(92, 206, 255, 0.542);
-  box-shadow: 0 5px 20px #496a72a3;
+    border: 1px solid rgba(134, 128, 107, 0.542);
+    box-shadow: 0 5px 20px #544c42c8;
   transition: transform 1s, box-shadow 0.7s;
 }
 #about-sec:hover {
@@ -408,7 +408,7 @@ header:hover {
 #about-sec h3 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #ffebcb;
   font-family: "Exo 2", sans-serif;
 }
 #nitin {
@@ -419,7 +419,7 @@ header:hover {
   -webkit-text-fill-color: transparent; 
 }
 .about-content {
-  color: #8c9698;
+  color: #a39888d8;
   font-family: "Exo 2", sans-serif;
 }
 
@@ -470,23 +470,23 @@ header:hover {
   width: 100%;
   text-align: center;
   border-radius:20px;
-  border: 1px solid rgba(92, 206, 255, 0.542);
-  box-shadow: 0 5px 20px #496a72a3;
+ border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 5px 20px #63594dc8;
   transition: transform 1s, box-shadow 0.7s;
 }
 #projects:hover {
   transform: translateY(-20px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(48, 48, 48, 0.748);
 }
 #detail{
   place-content: center;
-  color: #ad2b4b;
+  color: #cb1010;
 }
 
 #projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #ffebcb;
     font-family: "Exo 2", sans-serif;
 }
 
@@ -507,7 +507,7 @@ header:hover {
     backdrop-filter: blur(10px)brightness(1);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 0 3px 5px #ccf7ff90;
+    box-shadow: 0 3px 5px #ffe5cc90;
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;
@@ -525,7 +525,7 @@ header:hover {
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: "Exo 2", sans-serif;
-    color: #ffffff; /* Highlighted color for project titles */
+    color: #d1c5b2; /* Highlighted color for project titles */
 }
 .project-box a {
   --border-width:1px;
@@ -605,8 +605,8 @@ header:hover {
     width: 79%;
     text-align: center;
     border-radius:20px;
-    border: 1px solid rgba(92, 206, 255, 0.542);
-  box-shadow: 0 5px 20px #496a72a3;
+    border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 5px 20px #7e7162c8;
     transition: transform 1s, box-shadow 0.7s;
 }
 #skills:hover {
@@ -615,7 +615,7 @@ header:hover {
 }
 
 #skills h2 {
-  color: #ffffff;
+  color: #ffebcb;
   font-family: "Exo 2", sans-serif;
   margin-bottom: 2rem;
 }
@@ -627,7 +627,7 @@ header:hover {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.545));
   border-radius: 20px;
   padding: 100px ;
-  border: 1px solid rgba(199, 247, 255, 0.447);
+  border: 1px solid rgba(255, 232, 199, 0.447);
   position: relative;
   overflow: hidden;
   transition: transform 0.4s, box-shadow 0.4s;
@@ -697,7 +697,7 @@ header:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #82eaff calc(var(--percentage) * 1%),
+    #ffde92 calc(var(--percentage) * 1%),
     #ffffff 0);
   border-radius: 50%;
   z-index: 1;
@@ -724,7 +724,7 @@ header:hover {
 
 /* Animation */
 .circle:hover {
-  box-shadow: 0 0 15px #8f8f8f, 0 0 30px #febeffca;
+  box-shadow: 0 0 15px #ffe5ac, 0 0 30px #ffdbb1ca;
 }
 @media (max-width: 768px) {
   #skilled {
@@ -748,7 +748,7 @@ header:hover {
     --border-width:1px;
     position: relative;
     padding: 15px;
-    color: white;
+    color: #ffebcb;
     font-family: "Exo 2", sans-serif;
     background-color: rgba(0, 0, 0, 0.418);
     align-items: center;
@@ -797,7 +797,7 @@ header:hover {
   
   .contact-container p {
     font-size: 1rem;
-    color: #479caf;
+    color: #c9a88ddc;
     margin-bottom: 20px;
   }
   
@@ -842,7 +842,7 @@ header:hover {
   #contact-form textarea {
     padding: 10px;
     font-size: 0.9rem;
-    border: 1px solid #00303b;
+    border: 1px solid #75664ea9;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -852,13 +852,13 @@ header:hover {
     padding: 10px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    background-color: #58b9cc;
+    background-color: #c09b82;
     border-radius: 5px;
     cursor: pointer;
   }
   
   #contact-form button:hover {
-    background-color: #2b7582;
+    background-color: #9b7553;
   }
   @media (max-width: 768px) {
     #contact-section {
@@ -874,16 +874,16 @@ header:hover {
   }
   
   footer {
-    background: linear-gradient(to right, #0000001a, #0e000873);
-    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #0000001a, #080004db);
+    color: #ffffff;
     padding: 5rem;
     text-align: left;
     border-radius: 20px;
     width: 70%;
     max-width: 900px;
     margin: auto;
-    border: 1px solid rgba(122, 215, 255, 0.542);
-  box-shadow: 0 5px 20px #6c9ba7a3;
+    border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 5px 20px #7e7162c8;
 }
   
 .info-item2 .icon{
@@ -908,13 +908,13 @@ header:hover {
     gap: 1.5rem;
 }
 .footer-right a {
-    color: rgb(206, 246, 255);
+    color: rgb(215, 199, 174);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 .footer-right a:hover {
-    color: #8ef0ff;
+    color: #ffd28ed3;
 }
 .footer-logo {
     font-size: 2rem;
@@ -942,7 +942,7 @@ header:hover {
 }
 
 .dark-theme {
-  background: linear-gradient(65deg, #000000,#001216,#000000,#001013);
+  background: linear-gradient(65deg, #000000,#0e0d00,#000000,#0f0f00);
 }
 
 body {
@@ -955,9 +955,9 @@ body {
   padding: 4px 7px;
   font-weight: bold;
   border-radius: 15px;
-  background: #ffffffb6;
+  background: #ffe7c6;
   color: rgba(0, 0, 0, 0.871);
-  border: 1px solid rgba(92, 206, 255, 0.542);
-  box-shadow: 0 2px 20px #86c2d0a3;
+  border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 2px 15px #7e7162c8;
   cursor: pointer;
 }

@@ -61,7 +61,7 @@ body {
 .intro {
   font-family: sans-serif;
   font-size: 1.2rem;
-  background: linear-gradient(-1deg, #ff7615, #e551ff); /* Gradient colors */
+  background: linear-gradient(50deg, #90e7ffcc,#335058cc); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */
   margin-bottom: 10px;
@@ -105,7 +105,7 @@ body {
 .description {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
-  color: #9c8795; /* Light gray text */
+  color: #87999c; /* Light gray text */
   margin: 20px 0;
   line-height: 1.6;
 }
@@ -135,14 +135,14 @@ body {
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
+      hsl(0, 100%, 79%),
+        hsl(268, 100%, 80%),
+        hsl(314, 100%, 90%),
+        hsl(358, 100%, 86%),
+        hsl(50, 100%, 86%),
+        hsl(224, 100%, 85%),
+        hsl(13, 100%, 84%),
+        hsl(0, 100%, 79%)
     );
     background-size: 290% 290%;
     background-position: 0 50%;
@@ -221,8 +221,8 @@ body {
   width: 200px; /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
-  border: 1px solid rgba(255, 189, 255, 0.693);
-  box-shadow: 0 0px 15px #f0bdff;
+  border: 1px solid rgba(154, 224, 232, 0.693);
+  box-shadow: 0 0px 15px #81e8ffad;
   overflow: -moz-hidden-unscrollable;
   
 }
@@ -239,7 +239,7 @@ body {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  color: rgb(255, 223, 251);
+  color: hsl(0, 0%, 100%);
   top: 600px;
   white-space: nowrap;
   position: absolute;
@@ -283,8 +283,8 @@ body {
 header {
   background-color: #000000;
   border-radius: 90px;
-  border: 1px solid rgb(255, 185, 255);
-  box-shadow: 0 3px 7px #f0b6ffd1;
+  border: 2px solid rgb(0, 105, 119);
+  box-shadow: 0 3px 7px #50dfff;
   /* position: absolute; */
  position: fixed;
  top: 2px;
@@ -325,11 +325,11 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  color: hsl(320, 100%, 84%);
+  color: #90e7ffcc;
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: hsl(320, 12%, 55%);
+  color: hsl(189, 12%, 55%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -344,13 +344,13 @@ header:hover {
   text-decoration: none;
   padding: 8px 15px;
   font-family: "Exo 2", sans-serif;
-  color: hsl(321, 100%, 94%);
+  color: #d0f9ffde;
 }
 
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #f27eff;
+  color: #6de4ff;
 }
 @keyframes bounce {
   0%, 100% {
@@ -397,8 +397,8 @@ header:hover {
     text-align: center;
     padding: 10px;
     border-radius:20px;
-    border: 1px solid rgba(250, 192, 250, 0.542);
-  box-shadow: 0 5px 20px #9b86aa8c;
+    border: 1px solid rgba(92, 206, 255, 0.542);
+  box-shadow: 0 5px 20px #496a72a3;
   transition: transform 1s, box-shadow 0.7s;
 }
 #about-sec:hover {
@@ -414,12 +414,12 @@ header:hover {
 #nitin {
   font-weight: bold;
   font-family: bradley hand, cursive;
-  background: linear-gradient(30deg, #ff7615, #e551ff); /* Gradient colors */
-  -webkit-background-clip: text; /* Clip the background to text */
-  -webkit-text-fill-color: transparent; /* Make text transparent */
+  background: linear-gradient(30deg, #ff7615, #e551ff);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
 .about-content {
-  color: #988c97;
+  color: #8c9698;
   font-family: "Exo 2", sans-serif;
 }
 
@@ -470,8 +470,8 @@ header:hover {
   width: 100%;
   text-align: center;
   border-radius:20px;
-  border: 1px solid rgba(250, 192, 250, 0.542);
-  box-shadow: 0 5px 20px #9b86aa8c;
+  border: 1px solid rgba(92, 206, 255, 0.542);
+  box-shadow: 0 5px 20px #496a72a3;
   transition: transform 1s, box-shadow 0.7s;
 }
 #projects:hover {
@@ -507,7 +507,7 @@ header:hover {
     backdrop-filter: blur(10px)brightness(1);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
-    box-shadow: 0 3px 5px #f3dbf590;
+    box-shadow: 0 3px 5px #ccf7ff90;
     padding: 20px;
     max-width: 300px; /* Limits the width of each project box */
     text-align: left;
@@ -605,8 +605,8 @@ header:hover {
     width: 79%;
     text-align: center;
     border-radius:20px;
-    border: 1px solid rgba(250, 192, 250, 0.542);
-    box-shadow: 0 5px 20px #9b86aa8c;
+    border: 1px solid rgba(92, 206, 255, 0.542);
+  box-shadow: 0 5px 20px #496a72a3;
     transition: transform 1s, box-shadow 0.7s;
 }
 #skills:hover {
@@ -627,7 +627,7 @@ header:hover {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.545));
   border-radius: 20px;
   padding: 100px ;
-  border: 1px solid rgba(255, 213, 252, 0.37);
+  border: 1px solid rgba(199, 247, 255, 0.447);
   position: relative;
   overflow: hidden;
   transition: transform 0.4s, box-shadow 0.4s;
@@ -697,7 +697,7 @@ header:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #ffb1ea calc(var(--percentage) * 1%),
+    #82eaff calc(var(--percentage) * 1%),
     #ffffff 0);
   border-radius: 50%;
   z-index: 1;
@@ -797,7 +797,7 @@ header:hover {
   
   .contact-container p {
     font-size: 1rem;
-    color: #ff9add;
+    color: #479caf;
     margin-bottom: 20px;
   }
   
@@ -842,7 +842,7 @@ header:hover {
   #contact-form textarea {
     padding: 10px;
     font-size: 0.9rem;
-    border: 1px solid #5e5e5e;
+    border: 1px solid #00303b;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -852,13 +852,13 @@ header:hover {
     padding: 10px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    background-color: #faaeff;
+    background-color: #58b9cc;
     border-radius: 5px;
     cursor: pointer;
   }
   
   #contact-form button:hover {
-    background-color: #af3a92;
+    background-color: #2b7582;
   }
   @media (max-width: 768px) {
     #contact-section {
@@ -874,7 +874,7 @@ header:hover {
   }
   
   footer {
-    background: linear-gradient(to right, #0000001a, #0f0b0fe8);
+    background: linear-gradient(to right, #0000001a, #0e000873);
     color: rgb(255, 255, 255);
     padding: 5rem;
     text-align: left;
@@ -882,9 +882,10 @@ header:hover {
     width: 70%;
     max-width: 900px;
     margin: auto;
-    border: 1px solid rgb(255, 213, 255);
-    box-shadow: 0 0px 30px #9b86aa8c;
+    border: 1px solid rgba(122, 215, 255, 0.542);
+  box-shadow: 0 5px 20px #6c9ba7a3;
 }
+  
 .info-item2 .icon{
   position: relative;
   top: 50px;
@@ -907,13 +908,13 @@ header:hover {
     gap: 1.5rem;
 }
 .footer-right a {
-    color: rgb(255, 206, 247);
+    color: rgb(206, 246, 255);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 .footer-right a:hover {
-    color: #ff8eff;
+    color: #8ef0ff;
 }
 .footer-logo {
     font-size: 2rem;
@@ -952,10 +953,11 @@ body {
   position: relative;
   top: 25px;
   padding: 4px 7px;
+  font-weight: bold;
   border-radius: 15px;
-  background: #00000000;
-  color: rgb(249, 230, 255);
-  border: 1px solid rgb(143, 143, 143);
-  box-shadow: 0 0px 10px #ffc9e9;
+  background: #ffffffb6;
+  color: rgba(0, 0, 0, 0.871);
+  border: 1px solid rgba(92, 206, 255, 0.542);
+  box-shadow: 0 2px 20px #86c2d0a3;
   cursor: pointer;
 }

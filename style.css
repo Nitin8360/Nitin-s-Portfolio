@@ -283,7 +283,7 @@ body {
 header {
   background-color: #000000;
   border-radius: 90px;
-  border: 2px solid rgb(79, 200, 216);
+  border: 1px solid rgb(79, 200, 216);
   box-shadow: 0 3px 7px #50dfff;
   /* position: absolute; */
  position: fixed;

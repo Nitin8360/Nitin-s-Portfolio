@@ -110,7 +110,7 @@ body {
   line-height: 1.6;
 }
 
-.hire-btn {
+.hire-btn{
   --border-width:1px;
   
   position: relative;
@@ -470,7 +470,7 @@ header:hover {
   border: 1px solid rgba(134, 128, 107, 0.542);
   box-shadow: 0 1px 10px #544c42c8;
 transition: transform 1s, box-shadow 0.7s;
-cursor: pointer;
+/* cursor: pointer; */
 }
 .about-section:hover {
 transform: translateY(-30px);
@@ -516,7 +516,7 @@ opacity: 0.3;
   display: grid;
   grid-template-columns: repeat(3, 80px);
   gap: 15px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.736);
   padding: 20px;
   border-radius: 20px;
 }
@@ -525,7 +525,7 @@ opacity: 0.3;
   width: 60px;
   height: 60px;
   padding: 10px;
-  background: #00000000;
+  background: #13131365;
   border-radius: 15px;
   object-fit: contain;
   transition: transform 0.3s ease;

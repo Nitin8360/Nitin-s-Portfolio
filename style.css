@@ -398,12 +398,31 @@ header:hover {
     padding: 10px;
     border-radius:20px;
     border: 1px solid rgba(134, 128, 107, 0.542);
-    box-shadow: 0 5px 20px #544c42c8;
+    box-shadow: 0 1px 10px #544c42c8;
   transition: transform 1s, box-shadow 0.7s;
 }
 #about-sec:hover {
   transform: translateY(-30px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#about-sec:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgba(126, 116, 94, 0.552) 90%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
+
+#about-sec:hover:before {
+  opacity: 0.3;
 }
 #about-sec h3 {
   font-size: 2rem;
@@ -471,12 +490,31 @@ header:hover {
   text-align: center;
   border-radius:20px;
  border: 1px solid rgba(134, 128, 107, 0.542);
-  box-shadow: 0 5px 20px #63594dc8;
+  box-shadow: 0 1px 10px #63594dc8;
   transition: transform 1s, box-shadow 0.7s;
 }
 #projects:hover {
   transform: translateY(-20px);
   box-shadow: 0 6px 12px rgba(48, 48, 48, 0.748);
+}
+#projects:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgba(126, 116, 94, 0.552) 90%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
+
+#projects:hover:before {
+  opacity: 0.3;
 }
 #detail{
   place-content: center;
@@ -500,7 +538,7 @@ header:hover {
 
 /* Individual Project Box Styling */
 .project-box {
-    background-color: rgba(0, 0, 0, 0.118);
+    background-color: rgba(0, 0, 0, 0.686);
    border: 1px solid rgba(255, 254, 253, 0.126);
 
     font-family: "Urbanist", sans-serif;
@@ -518,8 +556,27 @@ header:hover {
 .project-box:hover {
     transform: translateY(-40px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.project-box:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgb(117, 99, 80) 90%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
 }
 
+.project-box:hover:before {
+  opacity: 1;
+}
 /* Title Styling */
 .project-box h3 {
     font-size: 1.5rem;
@@ -606,12 +663,31 @@ header:hover {
     text-align: center;
     border-radius:20px;
     border: 1px solid rgba(134, 128, 107, 0.542);
-  box-shadow: 0 5px 20px #7e7162c8;
+  box-shadow: 0 1px 10px #7e7162c8;
     transition: transform 1s, box-shadow 0.7s;
 }
 #skills:hover {
   transform: translateY(-30px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#skills:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgba(126, 116, 94, 0.552) 90%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
+
+#skills:hover:before {
+  opacity: 0.3;
 }
 
 #skills h2 {

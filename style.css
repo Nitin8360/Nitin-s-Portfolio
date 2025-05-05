@@ -749,9 +749,9 @@ header:hover {
   position: relative;
   width: 70px;  /* Smaller size */
   height: 70px; /* Smaller size */
-  background: #ffffff7e;
+  background: #0000007e;
   border-radius: 50%;
-  box-shadow: 0 0px 15px rgba(255, 255, 255, 0.5), inset 0 -10px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0px 15px rgba(148, 143, 135, 0.5), inset 0 -10px 15px rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -762,45 +762,20 @@ header:hover {
 }
 .circle:hover {
   transform: translateY(-15px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.463);
 }
 
-.circle:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(
-    #ffde92 calc(var(--percentage) * 1%),
-    #ffffff 0);
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.circle:after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  background: #171010;
-  border-radius: 50%;
-  z-index: 2;
-  box-shadow: inset 0 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-.circle span {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  color: #fff;
-  font-size: 10px;  /* Adjust text size for smaller circles */
+/* Adjust skill images inside the circle */
+.circle img {
+  width: 60%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: auto; /* Center the image */
 }
 
 /* Animation */
 .circle:hover {
-  box-shadow: 0 0 15px #ffe5ac, 0 0 30px #ffdbb1ca;
+  box-shadow: 0 0 15px #9e8e6c, 0 0 30px #ffdbb1ca;
 }
 @media (max-width: 768px) {
   #skilled {

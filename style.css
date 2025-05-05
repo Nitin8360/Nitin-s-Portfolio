@@ -387,7 +387,118 @@ header:hover {
 }
 
 /* General Section Styling */
-#about-sec {
+
+.about-section{
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  background-color: rgba(23, 23, 23, 0.432);
+  align-items: center;
+  max-width: 950px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius:20px;
+  border: 1px solid rgba(134, 128, 107, 0.542);
+  box-shadow: 0 1px 10px #544c42c8;
+transition: transform 1s, box-shadow 0.7s;
+}
+.about-section:hover {
+transform: translateY(-30px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.about-section:before {
+background: linear-gradient(
+  45deg,
+  transparent 5%,
+  rgba(126, 116, 94, 0.552) 90%,
+  transparent 99%
+);
+border-radius: inherit;
+content: "";
+inset: 1px;
+opacity: 0;
+position: absolute;
+transition: opacity 400ms;
+z-index: 0;
+}
+
+.about-section:hover:before {
+opacity: 0.3;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.skills-grid img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: #00000000;
+  border-radius: 15px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.1);
+}
+
+.about-right {
+  flex: 1 1 500px;
+}
+
+.about-right h2 {
+  font-size: 28px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.about-right h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.highlight {
+  color: #6a5acd; /* Purple/Indigo like in image */
+}
+
+.about-right p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+}
+.skills-grid img {
+  transform: rotate(45deg);
+}
+.skills-grid img > * {
+  transform: rotate(-45deg);
+}
+
+
+/* #about-sec {
     color: white;
     font-family: "Exo 2", sans-serif;
     background-color: rgba(0, 0, 0, 0);
@@ -440,7 +551,7 @@ header:hover {
 .about-content {
   color: #a39888d8;
   font-family: "Exo 2", sans-serif;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -1403,11 +1403,11 @@ p {
     }
 }
 :root {
-  background: linear-gradient(65deg, #000000,#090007,#000000,#090006);
+  background: linear-gradient(65deg, #000000,#080006,#000000,#060004);
 }
 
 .dark-theme {
-  background: linear-gradient(65deg, #000000,#0e0d00,#000000,#0f0f00);
+  background: linear-gradient(65deg, #000000,#0b0a00,#000000,#090900);
 }
 
 body {

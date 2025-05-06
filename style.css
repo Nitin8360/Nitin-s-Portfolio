@@ -241,7 +241,9 @@ body {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  color: hsla(30, 2%, 56%, 0.775);
+  background: linear-gradient(to right, #6e3f61, #756640);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   top: 535px;
   white-space: nowrap;
   position: absolute;

@@ -346,7 +346,7 @@ header:hover {
 .nav-button {
   display: inline-block;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 7px 15px;
   font-family: "Exo 2", sans-serif;
   font-weight: bold;
   color: #ffffffde;
@@ -386,7 +386,7 @@ header:hover {
 /* Adjust for very small screens */
 @media (max-width: 480px) {
     .nav-button {
-        padding: 2px 3px;
+        padding: 1px 3px;
         font-size: 0.6rem;
     }
 }

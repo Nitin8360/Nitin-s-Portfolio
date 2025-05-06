@@ -222,7 +222,7 @@ body {
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
   border: 1px solid rgba(134, 128, 107, 0.542);
-  box-shadow: 0 5px 20px #7e7162c8;
+  box-shadow: 0 2px 12px #7e7162c8;
   overflow: -moz-hidden-unscrollable;
   
 }

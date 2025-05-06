@@ -733,13 +733,13 @@ p {
     transform: translateX(-50%);
   }
   .left{
-    top: -230px;
+    top: -20px;
     left: 97px;
     right: auto;
     transform: translateX(-50%);
   }
   .right{
-    top: 90px;
+    top: 0px;
     left: 97px;
     right: auto;
     transform: translateX(-50%);
@@ -748,7 +748,7 @@ p {
     position: relative;
     max-width: 1200px;
     margin: auto;
-    padding: 250px 0;
+    padding: 40px 0;
   }
   
   .right img {

@@ -241,8 +241,8 @@ body {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  color: hsla(31, 25%, 66%, 0.775);
-  top: 600px;
+  color: hsla(30, 2%, 56%, 0.775);
+  top: 550px;
   white-space: nowrap;
   position: absolute;
   text-align: center;

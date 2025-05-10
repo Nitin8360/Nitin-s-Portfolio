@@ -105,7 +105,7 @@ body {
 .description {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
-  color: #a39888d8; /* Light gray text */
+  color: #a5a5a5d8; /* Light gray text */
   margin: 20px 0;
   line-height: 1.6;
 }
@@ -117,7 +117,7 @@ body {
   font-family: sans-serif;
   background-color: #000000; /* Neon yellow button */
   text-decoration: none;
-  color: #e3d3b1; /* Black text */
+  color: #e0e0e0; /* Black text */
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -221,8 +221,8 @@ body {
   width: 200px; /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%; /* Creates the circular shape */
-  border: 1px solid rgba(134, 128, 107, 0.542);
-  box-shadow: 0 2px 12px #7e7162c8;
+  border: 1px solid rgba(136, 101, 122, 0.542);
+  box-shadow: 0 2px 12px #7d6271c8;
   overflow: -moz-hidden-unscrollable;
   
 }
@@ -285,7 +285,7 @@ body {
 
 /* Navbar styling */
 header {
-  background-color: #000000e1;
+  background-color: rgba(3, 3, 3, 0.584);
   border-radius: 90px;
   border: 1px solid rgba(134, 107, 126, 0.542);
   box-shadow: 0 2px 12px #6b53619e;
@@ -329,11 +329,11 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  color: #fff1e3f0;
+  color: hsla(323, 100%, 93%, 0.941);
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: hsl(30, 38%, 79%);
+  color: hsl(324, 10%, 62%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -592,10 +592,10 @@ opacity: 0.3;
 
 .content1 {
   padding: 20px;
-  background-color: rgba(23, 23, 23, 0.432);;
+  background-color: rgba(24, 24, 24, 0.432);;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000000;
 }
 
 .container1::after {
@@ -730,7 +730,7 @@ p {
 }
 
 .service-card {
-  background-color: rgba(0, 0, 0, 0.578);;
+  background-color: rgba(3, 3, 3, 0.584);
   padding: 30px 20px;
   border-radius: 20px;
   position: relative;
@@ -889,7 +889,7 @@ p {
   }
   
 .card4{
-  background-color: #010101a4;
+  background-color: rgba(3, 3, 3, 0.584);
   border-radius: 60px 0 60px 0px;
   padding: 30px;
   width: 60%;
@@ -903,7 +903,7 @@ p {
   transform: translateY(-5px);
 }
 .card5{
-  background-color: #010101a4;
+  background-color: rgba(3, 3, 3, 0.584);
   border-radius: 60px 0 60px 0px;
   padding: 60px;
   text-align: left;
@@ -1054,13 +1054,13 @@ p {
     color: #b3b3b3;
     font-weight: bold;
     font-family: "Exo 2", sans-serif;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(3, 3, 3, 0.584);
     align-items: center;
     right: 133px;
     max-width: 900px;
     width: 140%;
     text-align: center;
-    background: #000000;
+    background: #070707;
     border-radius: 80px 0 80px 0px;
     &::after {
       position: absolute;
@@ -1181,7 +1181,7 @@ p {
   }
   
   footer {
-    background: linear-gradient(to right, #0000001a, #080004db);
+    background: linear-gradient(to right, #080808, #000000);
     color: #ffffff;
     padding: 5rem;
     text-align: left;
@@ -1189,8 +1189,8 @@ p {
     width: 70%;
     max-width: 900px;
     margin: auto;
-    border: 1px solid rgba(108, 83, 102, 0.542);
-  box-shadow: 0 3px 10px #5e3952c8;
+    border: 1px solid rgba(87, 87, 87, 0.542);
+  box-shadow: 0 3px 10px #414141c8;
 }
   
 .info-item2 .icon{
@@ -1215,13 +1215,13 @@ p {
     gap: 1.5rem;
 }
 .footer-right a {
-    color: rgb(215, 199, 174);
+    color: rgb(207, 207, 207);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 .footer-right a:hover {
-    color: #ffd28ed3;
+    color: #a1a1a1d3;
 }
 .footer-logo {
     font-size: 2rem;
@@ -1245,8 +1245,7 @@ p {
     }
 }
 :root {
-  background: #0a0a0a;
-  /* background: linear-gradient(65deg, #000000,#080006,#000000,#060004); */
+  background: linear-gradient(65deg, #000000,#050505fb,#000000,#080808fa);
 }
 
 .dark-theme {
@@ -1265,7 +1264,7 @@ body {
   border-radius: 15px;
   background: #000000;
   color: rgba(255, 255, 255, 0.871);
-  border: 1px solid rgba(134, 107, 130, 0.542);
-  box-shadow: 0 2px 11px #7e6279c8;
+  border: 1px solid rgba(142, 142, 142, 0.759);
+  box-shadow: 0 2px 11px #4e4e4ec8;
   cursor: pointer;
 }

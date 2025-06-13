@@ -106,7 +106,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
   color: #a5a5a5d8; /* Light gray text */
-  margin: 20px 0;
+  margin: 58px 0;
   line-height: 1.6;
 }
 
@@ -229,7 +229,7 @@ body {
 @media (max-width: 768px) {
   .card {
     position: relative;
-    top: 113%;
+    top: 115%;
     left: 46.5%;
     transform: translateX(-50%);
     width: 33%;

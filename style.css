@@ -224,15 +224,15 @@ body {
   border-radius: 20px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 8px 25px rgba(36, 36, 36, 0.5);
+  box-shadow: 0 8px 25px rgba(18, 18, 18, 0.5);
 }
 @media (max-width: 768px) {
   .card {
     position: relative;
-    top: 120%;
+    top: 113%;
     left: 47%;
     transform: translateX(-50%);
-    width: 36%;
+    width: 30%;
     /* height: 70%; */
     padding: 10px;
   }

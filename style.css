@@ -347,10 +347,10 @@ body {
   transition: 0.3s ease;
   cursor: pointer;
 }
-.menu-modal {
+#menuModal {
   position: relative;
-  top: 53%;
-  left: 40%;
+  top: 257%;
+  left: 35%;
 
 }
 }
@@ -389,12 +389,12 @@ body {
   position: relative;
   top: 63%;
   left: 42%;
-  background: #090909c2;
+  background: #090909f1;
   backdrop-filter: blur(10px); /* Adds the glossy blur effect */
       -webkit-backdrop-filter: blur(10px); /* For Safari support */
   border: 1px solid #333;
-  border-radius: 5px 30px;
-  padding: 5px 6px;
+  border-radius: 12px;
+  padding: 2px 3px;
   display: none;
   z-index: 100;
   box-shadow: 0 5px 20px rgba(8, 8, 8, 0.448);

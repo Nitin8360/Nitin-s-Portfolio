@@ -564,6 +564,7 @@ header:hover {
 @media (max-width: 468px) {
   header {
     width: 395px;
+    top: 3px;
     /* max-width: 100%; */
     /* padding: 10px; */
     border-radius: 30px;

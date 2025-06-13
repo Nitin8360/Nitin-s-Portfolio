@@ -475,13 +475,13 @@ body {
 header {
   background-color: rgba(3, 3, 3, 0.584);
   border-radius: 90px;
-  border: 1px solid rgba(134, 107, 126, 0.542);
-  box-shadow: 0 2px 12px #6b53619e;
+  /* border: 1px solid rgba(83, 86, 120, 0.542); */
+  box-shadow: 0 2px 8px #4349629e;
  position: fixed;
- top: 2px;
+ top: 3%;
  backdrop-filter: blur(10px); /* background blur effect */
       -webkit-backdrop-filter: blur(30px); /* Safari support */
-  width: 55%;
+  width: 50%;
   z-index: 1000;
   transition: transform 0.4s, box-shadow 3s;
 }
@@ -517,11 +517,11 @@ header:hover {
 #singh{
   display: inline-block;
   font-family: bradley hand, cursive;
-  color: hsla(323, 100%, 93%, 0.941);
+  color: hsla(228, 100%, 93%, 0.941);
 }
 #singh:hover{
   animation: bounce 0.7s ease;
-  color: hsl(324, 10%, 62%);
+  color: hsl(240, 10%, 62%);
 }
 @keyframes bounce {
   0%, 100% {
@@ -537,13 +537,13 @@ header:hover {
   padding: 7px 15px;
   font-family: "Exo 2", sans-serif;
   font-weight: bold;
-  color: #dcbfd3de;
+  color: #bfc1dc;
 }
 
 /* Hover effect */
 .nav-button:hover {
   animation: bounce 0.7s ease;
-  color: #9d8092;
+  color: #80829d;
 }
 @keyframes bounce {
   0%, 100% {

@@ -29,3 +29,32 @@ document.querySelectorAll('.circle').forEach(circle => {
       localStorage.setItem("theme", "light");
     }
   });
+
+  //Profile Card
+   // Share button functionality
+    document.getElementById("shareBtn").addEventListener("click", () => {
+      if (navigator.share) {
+        navigator.share({
+          title: "Untold Coding",
+          text: "Check out this amazing web developer!",
+          url: window.location.href
+        }).catch((err) => console.log("Sharing failed:", err));
+      } else {
+        alert("Sharing not supported on this device.");
+      }
+    });
+
+    // Menu toggle functionality
+    const menuBtn = document.getElementById("menuBtn");
+    const menuModal = document.getElementById("menuModal");
+
+    menuBtn.addEventListener("click", () => {
+      menuModal.classList.toggle("show");
+    });
+
+    // Click outside modal to close
+    document.addEventListener("click", (e) => {
+      if (!menuModal.contains(e.target) && e.target.id !== "menuBtn") {
+        menuModal.classList.remove("show");
+      }
+    });

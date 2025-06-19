@@ -215,12 +215,13 @@ body {
 
 /* Profile card */
 .card {
-  background: linear-gradient(145deg, #14141498, #0000007e);
+  background: linear-gradient(145deg, #0a0a0a1a, #0000009c);
   padding: 30px 20px;
   position: relative;
   left: 32%;
   top: 50%;
   width: 280px;
+  border: 0.1px solid rgba(255, 255, 255, 0.075);
   border-radius: 20px;
   text-align: center;
   color: #fff;
@@ -1438,7 +1439,7 @@ p {
 }
 
 .dark-theme {
-  background: linear-gradient(65deg, #000000,#0b0a00,#000000,#090900);
+  background: linear-gradient(65deg, #040305c7,#080609c7,#000000,#0d090fbc);
 }
 
 body {

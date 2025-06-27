@@ -1404,7 +1404,9 @@ p {
     }
 }
 :root {
-  background: linear-gradient(65deg, #000000,#050505fb,#000000,#080808fa);
+  background-image: url(wp4583973-super-amoled-wallpapers.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .dark-theme {

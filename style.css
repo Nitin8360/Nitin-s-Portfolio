@@ -85,7 +85,7 @@ body {
 
 
 .description {
-  font-family: bradley hand, cursive;
+  font-family: "Exo 2", sans-serif;
   font-size: 1rem;
   color: #9092a3d8; /* Light gray text */
   margin: 58px 0;
@@ -653,7 +653,6 @@ opacity: 0.3;
 }
 
 .about-right p {
-   font-family: bradley hand, cursive;
   font-size: 16px;
   line-height: 1.7;
   color: #cccccc;
@@ -814,7 +813,6 @@ h4 {
 }
 
 p {
-   font-family: bradley hand, cursive;
   margin: 10px 0 0;
   font-size: 14px;
   color: #bbb;

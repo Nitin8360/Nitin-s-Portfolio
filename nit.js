@@ -94,9 +94,9 @@ document.querySelectorAll('.circle').forEach(circle => {
 
                 // Remove after animation
                 setTimeout(() => {
-                    particle.remove();
+                    particle1.remove();
                 }, 2000);
-            }, 10);
+            }, 5);
             
             // Subtle movement of gradient spheres
             const spheres = document.querySelectorAll('.gradient-sphere');

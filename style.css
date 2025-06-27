@@ -27,25 +27,7 @@ body {
       opacity: 1;
   }
 }
-/* Keyframes for moving the background gradient */
-/* @keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-/* @media (max-width: 968px) {
-  body {
-    width: 850px;
-    left: 385px;
-    transform: none;
-    text-align: center; /* Center the content within the header */
-  
+
 
 .hero-section {
   position: absolute;
@@ -61,7 +43,7 @@ body {
 .intro {
   font-family: sans-serif;
   font-size: 1.2rem;
-  background: linear-gradient(171deg, #44c7ff,#00ccffc7); /* Gradient colors */
+  background: linear-gradient(215deg, #001e82,#bbbeff); /* Gradient colors */
   -webkit-background-clip: text; /* Clip the background to text */
   -webkit-text-fill-color: transparent; /* Make text transparent */
   margin-bottom: 10px;
@@ -105,7 +87,7 @@ body {
 .description {
   font-family: "Exo 2", sans-serif;
   font-size: 1rem;
-  color: #a5a5a5d8; /* Light gray text */
+  color: #9092a3d8; /* Light gray text */
   margin: 58px 0;
   line-height: 1.6;
 }
@@ -432,7 +414,7 @@ body {
 .welcome {
   font-family: "Exo 2", sans-serif;
   font-size: 3vw;
-  background: linear-gradient(to right, #6e3f61, #756640);
+  background: linear-gradient(to right, #6e3f61, #576094,#6e3f61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   top: 535px;
@@ -459,20 +441,6 @@ body {
   height: 20px; /* Adjust this height as needed */
 }
 
-/* @keyframes moveText {
-  0% {
-    transform: translateX(-100%) translateX(-50%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(0) translateX(-50%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%) translateX(-50%);
-    opacity: 0;
-  }
-} */
 
 /* Navbar styling */
 header {
@@ -670,7 +638,7 @@ opacity: 0.3;
 
 .about-right h2 {
   font-size: 28px;
-  color: #aaa;
+  color: #cfcfcf;
   margin-bottom: 10px;
 }
 
@@ -681,13 +649,13 @@ opacity: 0.3;
 }
 
 .highlight {
-  color: #6a5acd; /* Purple/Indigo like in image */
+  color: #7276ae; /* Purple/Indigo like in image */
 }
 
 .about-right p {
   font-size: 16px;
   line-height: 1.7;
-  color: #ccc;
+  color: #cccccc;
 }
 .skills-grid img {
   transform: rotate(45deg);
@@ -1246,7 +1214,6 @@ p {
     color: #b3b3b3;
     font-weight: bold;
     font-family: "Exo 2", sans-serif;
-    background-color: rgba(3, 3, 3, 0.584);
     align-items: center;
     right: 133px;
     max-width: 900px;

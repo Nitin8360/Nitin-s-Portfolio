@@ -58,3 +58,53 @@ document.querySelectorAll('.circle').forEach(circle => {
         menuModal.classList.remove("show");
       }
     });
+
+
+     // Create particle effect
+        const particlesContainer = document.getElementById('particles-container');
+       
+        // Mouse interaction
+        document.addEventListener('mousemove', (e) => {
+            // Create particles at mouse position
+            const mouseX = (e.clientX / window.innerWidth) * 100;
+            const mouseY = (e.clientY / window.innerHeight) * 100;
+            
+            // Create temporary particle
+            const particle1 = document.createElement('div');
+            particle1.className = 'particle1';
+
+            // Small size
+            const size = Math.random() * 4 + 2;
+            particle1.style.width = `${size}px`;
+            particle1.style.height = `${size}px`;
+
+            // Position at mouse
+            particle1.style.left = `${mouseX}%`;
+            particle1.style.top = `${mouseY}%`;
+            particle1.style.opacity = '0.6';
+
+            particlesContainer.appendChild(particle1);
+
+            // Animate outward
+            setTimeout(() => {
+                particle1.style.transition = 'all 2s ease-out';
+                particle1.style.left = `${mouseX + (Math.random() * 10 - 5)}%`;
+                particle1.style.top = `${mouseY + (Math.random() * 10 - 5)}%`;
+                particle1.style.opacity = '0';
+
+                // Remove after animation
+                setTimeout(() => {
+                    particle.remove();
+                }, 2000);
+            }, 10);
+            
+            // Subtle movement of gradient spheres
+            const spheres = document.querySelectorAll('.gradient-sphere');
+            const moveX = (e.clientX / window.innerWidth - 0.5) * 5;
+            const moveY = (e.clientY / window.innerHeight - 0.5) * 5;
+            
+            spheres.forEach(sphere => {
+                const currentTransform = getComputedStyle(sphere).transform;
+                sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });

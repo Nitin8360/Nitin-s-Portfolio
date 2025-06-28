@@ -205,11 +205,11 @@ body {
   width: 280px;
    backdrop-filter: blur(25px) saturate(180%);
   -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border: 0.1px solid rgba(94, 98, 135, 0.084);
+  border: 0.1px solid rgba(93, 94, 116, 0.318);
   border-radius: 20px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(8, 9, 14, 0.581);
+  box-shadow: 0 3px 10px rgba(30, 33, 49, 0.581);
 }
 @media (max-width: 768px) {
   .card {
@@ -229,7 +229,7 @@ body {
   border-radius: 50%;
   margin-bottom: 15px;
   object-fit: cover;
-  border: 2px solid #333;
+ border: 2px solid rgba(117, 120, 146, 0.493);
 }
 
 .name {

@@ -1141,12 +1141,12 @@ p {
   border-radius: 60px 0 60px 0px;
   overflow: hidden;
   position: relative;
-  border: 0.2px solid rgba(255, 255, 255, 0.179);
+  border: 0.2px solid rgba(255, 255, 255, 0.132);
   transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .project-card img {
@@ -1315,7 +1315,7 @@ p {
     padding: 10px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    background-color: #0375ff;
+    background-color: #606ca2ed;
     border-radius: 20px;
     cursor: pointer;
     width: 80%;
@@ -1324,7 +1324,7 @@ p {
   }
   
   #contact-form button:hover {
-    background-color: #001d90;
+    background-color: #3c466a;
   }
   @media (max-width: 768px) {
     #contact-section {
@@ -1374,13 +1374,13 @@ p {
     gap: 1.5rem;
 }
 .footer-right a {
-    color: rgb(207, 207, 207);
+    color: rgb(184, 191, 233);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 .footer-right a:hover {
-    color: #a1a1a1d3;
+    color: #888ebad3;
 }
 .footer-logo {
     font-size: 2rem;
@@ -1422,9 +1422,9 @@ body {
   font-weight: bold;
   border-radius: 15px;
   background: #000000;
-  color: rgba(255, 255, 255, 0.871);
-  border: 1px solid rgba(142, 142, 142, 0.759);
-  box-shadow: 0 2px 11px #4e4e4ec8;
+  color: rgba(217, 222, 255, 0.871);
+  border: 1px solid rgba(118, 124, 149, 0.868);
+  box-shadow: 0 2px 11px #3b3f4bc8;
   cursor: pointer;
 }
 .glow {

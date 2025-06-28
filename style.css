@@ -205,11 +205,11 @@ body {
   width: 280px;
    backdrop-filter: blur(25px) saturate(180%);
   -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border: 0.1px solid rgba(255, 255, 255, 0.075);
+  border: 0.1px solid rgba(94, 98, 135, 0.084);
   border-radius: 20px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(18, 18, 18, 0.5);
+  box-shadow: 0 4px 10px rgba(8, 9, 14, 0.581);
 }
 @media (max-width: 768px) {
   .card {
@@ -1672,3 +1672,227 @@ body {
             opacity: 0;
             pointer-events: none;
         }
+
+        /* Polygon card */
+        /* clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex; */
+  /* From Uiverse.io by kennyotsu */ 
+/*works janky on mobile :<*/
+ /* Flex container to arrange cards in a row */
+
+ #certificates {
+      position: relative;
+      color: #c1c1c1;
+      margin: 20px auto; /* Reduce top margin for smaller screens */
+      padding: 15px;
+      font-size: 2.3rem;
+      width: 58%; 
+      left: 11.8%;
+      max-width: 100%;
+      border-radius: 20px;
+    } 
+    @media (max-width: 768px) {
+      #certificates {
+        position: relative;
+        margin: 20px auto; /* Reduce top margin for smaller screens */
+        padding: 15px;
+        width: 58%; 
+        left: 0px;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+    }
+    #carding {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+/* Allow clicks on the card link */
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 700ms;
+  background: linear-gradient(43deg, rgba(65, 89, 208, 0.658) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 65px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .cont {
+      position: relative;
+      width: 230px;
+      height: 284px;
+      transition: 200ms;
+    }
+
+    .cont:active {
+      width: 180px;
+      height: 245px;
+    }
+
+    #carding img {
+  width: 100%;
+  top: -59px;
+  display: block;
+  position: relative;
+  left: 0%;
+  border-radius: 20px 20px 0px 0px;
+  
+}
+
+    #carding {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      transition: 700ms;
+      background: linear-gradient(43deg, rgba(101, 118, 207, 0.81) 0%, rgba(217, 112, 210, 0.822) 46%, rgba(245, 208, 140, 0.867) 100%);
+    }
+
+    .subtitle {
+      transform: translateY(160px);
+      color: rgb(134, 110, 221);
+      text-align: center;
+      width: 100%;
+    }
+
+   .title {
+  opacity: 0;
+  top: 78%;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out-out;
+  transition-delay: 100ms;
+  position: absolute;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.tracker:hover ~ #carding .title {
+  opacity: 1;
+  top: 59%;
+}
+
+    #prompt {
+      bottom: 8px;
+      left: 12px;
+      z-index: 20;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 300ms ease-in-out-out;
+      position: absolute;
+      max-width: 110px;
+      color: rgb(255, 255, 255);
+    }
+
+    .tracker {
+      position: absolute;
+      z-index: 200;
+      width: 100%;
+      height: 100%;
+    }
+
+    .tracker:hover {
+      cursor: pointer;
+    }
+
+    .tracker:hover ~ #carding {
+      transition: 300ms;
+      filter: brightness(1.1);
+    }
+
+    .cont:hover #carding::before {
+      transition: 200ms;
+      content: '';
+      opacity: 80%;
+    }
+
+    .canvas {
+      perspective: 800px;
+      inset: 0;
+      z-index: 200;
+      position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "tr-1 tr-2 tr-3 tr-4 tr-5"
+        "tr-6 tr-7 tr-8 tr-9 tr-10"
+        "tr-11 tr-12 tr-13 tr-14 tr-15"
+        "tr-16 tr-17 tr-18 tr-19 tr-20"
+        "tr-21 tr-22 tr-23 tr-24 tr-25";
+    }
+
+    #carding::before {
+      content: '';
+      background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+      filter: blur(2rem);
+      opacity: 30%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      transition: 200ms;
+    }
+
+    .noselect {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    /* Grid tracker classes */
+    .tr-1 { grid-area: tr-1; } .tr-2 { grid-area: tr-2; } .tr-3 { grid-area: tr-3; } .tr-4 { grid-area: tr-4; } .tr-5 { grid-area: tr-5; }
+    .tr-6 { grid-area: tr-6; } .tr-7 { grid-area: tr-7; } .tr-8 { grid-area: tr-8; } .tr-9 { grid-area: tr-9; } .tr-10 { grid-area: tr-10; }
+    .tr-11 { grid-area: tr-11; } .tr-12 { grid-area: tr-12; } .tr-13 { grid-area: tr-13; } .tr-14 { grid-area: tr-14; } .tr-15 { grid-area: tr-15; }
+    .tr-16 { grid-area: tr-16; } .tr-17 { grid-area: tr-17; } .tr-18 { grid-area: tr-18; } .tr-19 { grid-area: tr-19; } .tr-20 { grid-area: tr-20; }
+    .tr-21 { grid-area: tr-21; } .tr-22 { grid-area: tr-22; } .tr-23 { grid-area: tr-23; } .tr-24 { grid-area: tr-24; } .tr-25 { grid-area: tr-25; }
+
+    /* Hover animation logic */
+    .tr-1:hover ~ #carding { transform: rotateX(20deg) rotateY(-10deg); }
+    .tr-2:hover ~ #carding { transform: rotateX(20deg) rotateY(-5deg); }
+    .tr-3:hover ~ #carding { transform: rotateX(20deg) rotateY(0deg); }
+    .tr-4:hover ~ #carding { transform: rotateX(20deg) rotateY(5deg); }
+    .tr-5:hover ~ #carding { transform: rotateX(20deg) rotateY(10deg); }
+    .tr-6:hover ~ #carding { transform: rotateX(10deg) rotateY(-10deg); }
+    .tr-7:hover ~ #carding { transform: rotateX(10deg) rotateY(-5deg); }
+    .tr-8:hover ~ #carding { transform: rotateX(10deg) rotateY(0deg); }
+    .tr-9:hover ~ #carding { transform: rotateX(10deg) rotateY(5deg); }
+    .tr-10:hover ~ #carding { transform: rotateX(10deg) rotateY(10deg); }
+    .tr-11:hover ~ #carding { transform: rotateX(0deg) rotateY(-10deg); }
+    .tr-12:hover ~ #carding { transform: rotateX(0deg) rotateY(-5deg); }
+    .tr-13:hover ~ #carding { transform: rotateX(0deg) rotateY(0deg); }
+    .tr-14:hover ~ #carding { transform: rotateX(0deg) rotateY(5deg); }
+    .tr-15:hover ~ #carding { transform: rotateX(0deg) rotateY(10deg); }
+    .tr-16:hover ~ #carding { transform: rotateX(-10deg) rotateY(-10deg); }
+    .tr-17:hover ~ #carding { transform: rotateX(-10deg) rotateY(-5deg); }
+    .tr-18:hover ~ #carding { transform: rotateX(-10deg) rotateY(0deg); }
+    .tr-19:hover ~ #carding { transform: rotateX(-10deg) rotateY(5deg); }
+    .tr-20:hover ~ #carding { transform: rotateX(-10deg) rotateY(10deg); }
+    .tr-21:hover ~ #carding { transform: rotateX(-20deg) rotateY(-10deg); }
+    .tr-22:hover ~ #carding { transform: rotateX(-20deg) rotateY(-5deg); }
+    .tr-23:hover ~ #carding { transform: rotateX(-20deg) rotateY(0deg); }
+    .tr-24:hover ~ #carding { transform: rotateX(-20deg) rotateY(5deg); }
+    .tr-25:hover ~ #carding { transform: rotateX(-20deg) rotateY(10deg); }
